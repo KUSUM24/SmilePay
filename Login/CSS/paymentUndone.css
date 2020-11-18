@@ -1,0 +1,15 @@
+@import url("./../../Global/CSS/global.css");
+.signupHeading {
+    display: flex;
+    position: absolute;
+    font-family: 'Sansita Swashed', cursive;
+    left: 7vw;
+    top: 58vh;
+    font-size: 5vh;
+}
+.paymentSuccessful {
+    z-index: 1;
+    position: absolute;
+    top: 25vh;
+    left: 95vh;
+}

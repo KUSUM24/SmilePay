@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.background {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+.backgroundImgFirst {
+    opacity: 0.5;
+    width: 25%;
+    height: 100vh;
+    background-image: url(./../../Global/Images/firstBack.png);
+    background-size: 100% 100%;
+}
+.backgroundImgSecond {
+    position: absolute;
+    opacity: 0.5;
+    right: 0vw;
+    width: 30%;
+    height: 100vh;
+    background-image: url(./../../Global/Images/secondBack.jpeg);
+    background-size: 100% 100%;
+}
+.floatBox {
+    position: relative;
+    z-index: 1;
+    /* background: linear-gradient(to bottom right, #f077ea, #9146f5, #7ae3f5, #69d9f5, #9146f5, #f330e9); */
+    /* background: white; */
+    background: linear-gradient(to right top,rgb(255, 3, 242),rgb(253, 66, 213), rgb(248, 157, 236), rgb(248, 157, 236),rgb(253, 66, 213),rgb(255, 3, 242));    top: 7vh;
+    right: 11vw;
+    height: 85vh;
+    width: 70%;
+    /* background-size: auto auto; */
+    border-radius: 5vh;
+    box-shadow: 1vh 1vw 2vh  #203a4e;
+}
+.sideImg {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    top: 8vh;
+    width: 50%;
+    height: 65vh;
+    background-image: url(./../Images/Side3d.png);
+    background-size: 100% 100%;
+}
+.logo {
+    position: absolute;
+    margin-top: -60vh;
+    margin-left: 11vh;
+    width: 30%;
+    height: 30vh;
+    background-image: url(./../Images/smilepay.gif);
+    background-size: 100% 100%;
+}
+.login {
+    font-family: 'Sansita Swashed', cursive;
+    position: absolute;
+    padding: 1vh 10vw;
+    cursor: pointer;
+    top: 42vh;
+    left: 10vh;
+    background: linear-gradient(to right, #7f8bf7, #eb16e0);
+    /* color after hover is to be added to right, #dbb0b0, #b731d8 */
+    font-size: 3vh;
+    background-size: auto auto;
+    border-radius: 10vh;
+    color: white;
+}
+.login:hover{ 
+    display: block;
+    transition: 0.75s;
+    transform: scale(1.25);
+    background: linear-gradient(to right,#f150e9, #5b68dd);
+}
+.line {
+    position: relative;
+    width: 30vw;
+    border: solid;
+    /* border-width: .3vh; */
+    border-radius: 3vh;
+    left: 5vh;
+    top: -9vh;
+    border-color: black;
+}
+.signup {
+    position: absolute;
+    padding: 1vh 10vw;
+    cursor: pointer;
+    border-style: none;
+    top: 65vh;
+    left: 9vh;
+    background: linear-gradient(to right,#f150e9, #5b68dd);
+    /* color after hover is to be added to right, #dbb0b0, #b731d8  */
+    background-size: auto auto;
+    border-radius: 10vh;  
+}
+.signup:hover {
+    transition: 0.75s;
+    transform: scale(1.25);
+     background: linear-gradient(to right, #7f8bf7, #eb16e0);
+}
+.floatBox button {
+    cursor: pointer;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 3vh;
+    background: transparent;
+    border: transparent;
+    color: white;
+}

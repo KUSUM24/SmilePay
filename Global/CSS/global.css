@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+.background {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+.backgroundImgFirst {
+    opacity: 0.5;
+    width: 25%;
+    height: 100vh;
+    background-image: url(./../../Global/Images/firstBack.png);
+    background-size: 100% 100%;
+}
+.backgroundImgSecond {
+    position: absolute;
+    opacity: 0.5;
+    right: 0vw;
+    width: 30%;
+    height: 100vh;
+    background-image: url(./../../Global/Images/secondBack.jpeg);
+    background-size: 100% 100%;
+}
+.floatBox {
+    position: relative;
+    z-index: 1;
+    /* background: linear-gradient(to bottom right, #77c4f0, #9850f7, #b87fee, #f37de9, #bd81f5, #9141fa, #77c4f0); */
+    /* background: linear-gradient(to bottom right,rgb(28, 43, 247),rgb(9, 134, 236),rgb(0, 195, 255),rgb(241, 87, 208),rgb(243, 62, 189),rgb(253, 13, 161)); */
+    background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));
+    top: 7vh;
+    right: -5vw;
+    height: 85vh;
+    width: 35%;
+    /* background-size: auto auto; */
+    border-radius: 5vh;
+    box-shadow: 1vh 1vw 2vh  #203a4e;
+}
