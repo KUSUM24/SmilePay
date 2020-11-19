@@ -23,13 +23,243 @@
 .signupForm input{
     width: 100%;
     height: 50%;
-    color: #595f6e;
+    color: white;
     padding-top: 1.8vh;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
 }
+.signupForm label{
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    width: 100%;
+    height: 280%;
+    pointer-events: none;
+    /* border-bottom: 1px solid black; */
+}
+.signupForm label::after
+{
+    content: "";
+    position: absolute;
+    left: 0vw;
+    bottom: -0.1vh;
+    height: 100%;
+    width: 100%;
+    /* border-bottom: 3px solid blue; */
+    
+}
+.content-username{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    transition: all 0.3s ease;
+}
+.signupForm input:focus + .label-username .content-username,
+.signupForm input:valid + .label-username .content-username
+{
+    transform: translateY(-100%);
+    font-size: 4vh;
+    color: black;
+}
+
+.password {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 32vh;
+    height: -1vh;
+    left: 5vw;
+    font-size: 3vh;
+    
+    
+}
+.password input{
+    width: 100%;
+    height: 50%;
+    color: #595f6e;
+    padding-top: 1.8vh;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4vh;
+    color: white;
+}
+.password label{
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    width: 100%;
+    height: 300%;
+    pointer-events: none;
+    /* border-bottom: 1px solid black; */
+}
+.password label::after
+{
+    content: "";
+    position: absolute;
+    left: 0vw;
+    bottom: -0.1vh;
+    height: 100%;
+    width: 100%;
+    /* border-bottom: 3px solid blue; */
+  /* box-shadow: 1vw 0vh  #203a4e; */
+    
+}
+.content-password{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    transition: all 0.3s ease;
+}
+.password input:focus + .label-password .content-password,
+.password input:valid + .label-password .content-password
+{
+    transform: translateY(-100%);
+    font-size: 4vh;
+    color: black;
+}
+.passwordc {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 44vh;
+    height: -1vh;
+    left: 5vw;
+    font-size: 3vh;
+    
+    
+}
+.passwordc input{
+    width: 100%;
+    height: 50%;
+    color: white;
+    padding-top: 1.8vh;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4vh;
+    color: white;
+}
+.passwordc label{
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    width: 100%;
+    height: 300%;
+    pointer-events: none;
+    /* border-bottom: 1px solid black; */
+}
+.passwordc label::after
+{
+    content: "";
+    position: absolute;
+    left: 0vw;
+    bottom: -0.1vh;
+    height: 100%;
+    width: 100%;
+    /* border-bottom: 3px solid blue; */
+  /* box-shadow: 1vw 0vh  #203a4e; */
+    
+}
+.content-password{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    transition: all 0.3s ease;
+}
+.passwordc input:focus + .label-password .content-password,
+.passwordc input:valid + .label-password .content-password
+{
+    transform: translateY(-100%);
+    font-size: 4vh;
+    color: black;
+}
+
+.passwordp {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 56vh;
+    height: -1vh;
+    left: 5vw;
+    font-size: 3vh;
+    
+    
+}
+.passwordp input{
+    width: 100%;
+    height: 50%;
+    color: white;
+    padding-top: 1.8vh;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4vh;
+    color: white;
+}
+.passwordp label{
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    width: 100%;
+    height: 300%;
+    pointer-events: none;
+    /* border-bottom: 1px solid black; */
+}
+.passwordp label::after
+{
+    content: "";
+    position: absolute;
+    left: 0vw;
+    bottom: -0.1vh;
+    height: 100%;
+    width: 100%;
+    /* border-bottom: 3px solid blue; */
+  /* box-shadow: 1vw 0vh  #203a4e; */
+    
+}
+.content-password{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    transition: all 0.3s ease;
+}
+.passwordp input:focus + .label-password .content-password,
+.passwordp input:valid + .label-password .content-password
+{
+    transform: translateY(-100%);
+    font-size: 4vh;
+    color: black;
+}
+input[type=text] {
+
+    border-bottom: 3px solid blue;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+input[type=text]:focus {
+    border-bottom: 3px solid black;
+  }
+
+input[type=password] {
+
+    border-bottom: 3px solid blue;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+input[type=password]:focus {
+    border-bottom: 3px solid black;
+  }
 .back-button{
     position: absolute;
     top: 85%;
@@ -229,220 +459,6 @@ a.next-button span:nth-child(4){
     box-shadow: 0 5px #666;
     transform: translateX(2px);
   } 
-
-
-
-
-
-.signupForm label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0vw;
-    width: 100%;
-    height: 280%;
-    pointer-events: none;
-    /* border-bottom: 1px solid black; */
-}
-.signupForm label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.1vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    
-}
-.content-username{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
-}
-.signupForm input:focus + .label-username .content-username,
-.signupForm input:valid + .label-username .content-username
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
-}
-
-.password {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 32vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    
-    
-}
-.password input{
-    width: 100%;
-    height: 50%;
-    color: #595f6e;
-    padding-top: 1.8vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    color: white;
-}
-.password label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0vw;
-    width: 100%;
-    height: 300%;
-    pointer-events: none;
-    /* border-bottom: 1px solid black; */
-}
-.password label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.1vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-  /* box-shadow: 1vw 0vh  #203a4e; */
-    
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
-}
-.password input:focus + .label-password .content-password,
-.password input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
-}
-.passwordc {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 44vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    
-    
-}
-.passwordc input{
-    width: 100%;
-    height: 50%;
-    color: #595f6e;
-    padding-top: 1.8vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    color: white;
-}
-.passwordc label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0vw;
-    width: 100%;
-    height: 300%;
-    pointer-events: none;
-    /* border-bottom: 1px solid black; */
-}
-.passwordc label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.1vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-  /* box-shadow: 1vw 0vh  #203a4e; */
-    
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
-}
-.passwordc input:focus + .label-password .content-password,
-.passwordc input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
-}
-.passwordp {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 56vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    
-    
-}
-.passwordp input{
-    width: 100%;
-    height: 50%;
-    color: #595f6e;
-    padding-top: 1.8vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    color: white;
-}
-.passwordp label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0vw;
-    width: 100%;
-    height: 300%;
-    pointer-events: none;
-    /* border-bottom: 1px solid black; */
-}
-.passwordp label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.1vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-  /* box-shadow: 1vw 0vh  #203a4e; */
-    
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
-}
-.passwordp input:focus + .label-password .content-password,
-.passwordp input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
-}
-
 .nextButton {
     position: absolute;
     padding: 1vh 2vw;
