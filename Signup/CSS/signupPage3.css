@@ -56,7 +56,7 @@ a.back-button span:nth-child(1){
     left: 0;
     width:100%;
     height: 2px;
-    background:linear-gradient(to right,#f72424,#ff17d8);
+    background:linear-gradient(to right,#d0f724,#ff17d8);
     animation: animate1 2s linear infinite ;
 }
 @keyframes animate1{
@@ -73,7 +73,7 @@ a.back-button span:nth-child(2){
     right: 0;
     width:2px;
     height: 100%;
-    background:linear-gradient(to bottom,#f72424,#ff17d8);
+    background:linear-gradient(to bottom,#d0f724,#ff17d8);
     animation: animate2 2s linear infinite ;
     animation-delay:1s ;
 }
@@ -91,7 +91,7 @@ a.back-button span:nth-child(3){
     left: 0;
     width:100%;
     height: 2px;
-    background:linear-gradient(to left,#f72424,#ff17d8);
+    background:linear-gradient(to left,#d0f724,#ff17d8);
     animation: animate3 2s linear infinite ;
 }
 @keyframes animate3{
@@ -108,7 +108,7 @@ a.back-button span:nth-child(4){
     left: 0;
     width:2px;
     height: 100%;
-    background:linear-gradient(to top,#f72424,#ff17d8);
+    background:linear-gradient(to top,#d0f724,#ff17d8);
     animation: animate4 2s linear infinite ;
     animation-delay: 1s;
 }
@@ -157,7 +157,7 @@ a.next-button span:nth-child(1){
     left: 0;
     width:100%;
     height: 2px;
-    background:linear-gradient(to right,#f72424,#ff17d8);
+    background:linear-gradient(to right,#d0f724,#ff17d8);
     animation: animate1 2s linear infinite ;
 }
 @keyframes animate1{
@@ -174,7 +174,7 @@ a.next-button span:nth-child(2){
     right: 0;
     width:2px;
     height: 100%;
-    background:linear-gradient(to bottom,#f72424,#ff17d8);
+    background:linear-gradient(to bottom,#d0f724,#ff17d8);
     animation: animate2 2s linear infinite ;
     animation-delay:1s ;
 }
@@ -192,7 +192,7 @@ a.next-button span:nth-child(3){
     left: 0;
     width:100%;
     height: 2px;
-    background:linear-gradient(to left,#f72424,#ff17d8);
+    background:linear-gradient(to left,#d0f724,#ff17d8);
     animation: animate3 2s linear infinite ;
 }
 @keyframes animate3{
@@ -209,7 +209,7 @@ a.next-button span:nth-child(4){
     left: 0;
     width:2px;
     height: 100%;
-    background:linear-gradient(to top,#f72424,#ff17d8);
+    background:linear-gradient(to top,#d0f724,#ff17d8);
     animation: animate4 2s linear infinite ;
     animation-delay: 1s;
 }
