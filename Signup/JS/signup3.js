@@ -13,7 +13,8 @@ const addThirdDetails = (ev) => {
     }
     thirdDetails = JSON.stringify(userThird);
     localStorage.setItem('thirdDetails',thirdDetails);
-    window.location.href = "finalSignup.html";
+    localStorage.setItem('imgNo','5');
+    window.location.href = "face.html";
 }
 let userFirst = JSON.parse(localStorage.getItem('firstDetails'));
 let userSecond = JSON.parse(localStorage.getItem('secondDetails'));
