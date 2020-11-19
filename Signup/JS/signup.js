@@ -1,8 +1,10 @@
-var allUserDetails = "";
+// var allUserDetails = "";
 var firstDetails = "";
-var secondDetails = "";
-var thirdDetails = "";
-const addFirstDetails = () => {
+document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById('submit1').addEventListener('click',addFirstDetails);
+});
+const addFirstDetails = (ev) => {
+    ev.preventDefault();
     let userFirst = {
         Name: document.getElementById("name").value,
         Number: document.getElementById("number").value,
@@ -10,7 +12,5 @@ const addFirstDetails = () => {
     }
     firstDetails = JSON.stringify(userFirst);
     localStorage.setItem('firstDetails',firstDetails);
-}
-if(firstDetails!="") {
-    location.href = "signupPage.html";
+    window.location.href = "signupPage2.html"
 }

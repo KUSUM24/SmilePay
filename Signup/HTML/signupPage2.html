@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup | Bank Details</title>
     <link rel="stylesheet" href="./../CSS/SignupPage2.css">
+    <script src = "./../JS/signup2.js"></script>
 </head>
 <body>
     <div class = "background">
@@ -14,7 +15,7 @@
             <form action="">
                 <div class = "number">
                     <li>
-                        <input type="number" number="number" autocomplete="off" required />
+                        <input id = 'account' type="number" number="number" autocomplete="off" required />
                         <label for="number" class="label-number">
                             <span class="content-number">Account No</span>
                         </label>
@@ -22,7 +23,7 @@
                 </div>
                 <div class = "number2">
                     <li>
-                        <input type="number" number="number" autocomplete="off" required />
+                        <input id = 'aadhar' type="number" number="number" autocomplete="off" required />
                         <label for="number" class="label-number">
                             <span class="content-number">Adhar No</span>
                         </label>
@@ -30,7 +31,7 @@
                 </div>
                 <div class = "number3">
                     <li>
-                        <input type="number" number="number" autocomplete="off" required />
+                        <input id = 'pan' type="number" number="number" autocomplete="off" required />
                         <label for="number" class="label-number">
                             <span class="content-number">PAN No</span>
                         </label>
@@ -45,7 +46,7 @@
                     <span></span>
                     Back
                 </a>
-                <a href="./signupPage3.html" class="next-button">
+                <a href="./signupPage3.html" id = 'submit2' class="next-button">
                     <span></span>
                     <span></span>
                     <span></span>
