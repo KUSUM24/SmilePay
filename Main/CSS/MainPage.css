@@ -55,26 +55,127 @@
     background-image: url(./../Images/smilepay.gif);
     background-size: 100% 100%;
 }
-.login {
-    font-family: 'Sansita Swashed', cursive;
+.login{
+  position: absolute;
+  top: 55%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
+
+.link_login{
+  position: relative;
+}
+
+.link_login a{
+  display: block;
+  width: 15vw;
+  height: 8vh;
+  line-height: 8vh;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border: 0.1vh solid #333;
+  transition: all .35s;
+}
+
+.iconl{
+  width: 8vh;
+  height: 8vh;
+  border: 0.3vw solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.iconl svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #404743;
+  transition: all .35s;
+}
+
+.link_login a:hover{
+  width: 15vw;
+  border: 0.3vw solid #404743;
+  background: transparent;
+  color: #404743;
+}
+
+.link_login a:hover + .iconl{
+  border: 0.3vw solid #404743;
+  right: -25%;
+}
+  .signup{
     position: absolute;
-    padding: 1vh 10vw;
-    cursor: pointer;
-    top: 42vh;
-    left: 10vh;
-    background: linear-gradient(to right, #7f8bf7, #eb16e0);
-    /* color after hover is to be added to right, #dbb0b0, #b731d8 */
-    font-size: 3vh;
-    background-size: auto auto;
-    border-radius: 10vh;
-    color: white;
-}
-.login:hover{ 
+    top: 78%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_signup{
+    position: relative;
+  }
+  
+  .link_signup a{
     display: block;
-    transition: 0.75s;
-    transform: scale(1.25);
-    background: linear-gradient(to right,#f150e9, #5b68dd);
-}
+    width: 15vw;
+    height: 8vh;
+    line-height: 8vh;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    border: 0.1vh solid #333;
+    transition: all .35s;
+  }
+  
+  .icons{
+    width: 8vh;
+    height: 8vh;
+    border: 0.3vw solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icons svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #404743;
+    transition: all .35s;
+  }
+  
+  .link_signup a:hover{
+    width: 15vw;
+    border: 0.3vw solid #404743;
+    background: transparent;
+    color: #404743;
+  }
+  
+  .link_signup a:hover + .icons{
+    border: 0.3vw solid #404743;
+    right: -25%;
+  }
+
 .line {
     position: relative;
     width: 30vw;
@@ -85,23 +186,7 @@
     top: -9vh;
     border-color: black;
 }
-.signup {
-    position: absolute;
-    padding: 1vh 10vw;
-    cursor: pointer;
-    border-style: none;
-    top: 65vh;
-    left: 9vh;
-    background: linear-gradient(to right,#f150e9, #5b68dd);
-    /* color after hover is to be added to right, #dbb0b0, #b731d8  */
-    background-size: auto auto;
-    border-radius: 10vh;  
-}
-.signup:hover {
-    transition: 0.75s;
-    transform: scale(1.25);
-     background: linear-gradient(to right, #7f8bf7, #eb16e0);
-}
+
 .floatBox button {
     cursor: pointer;
     font-family: 'Sansita Swashed', cursive;
