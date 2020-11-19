@@ -73,12 +73,12 @@
   line-height: 8vh;
   font-weight: bold;
   text-decoration: none;
-  background: #333;
+  background:  #0f0f0f;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1vw;
-  border: 0.1vh solid #333;
+  border: 0.1vh solid  #0f0f0f;
   transition: all .35s;
 }
 
@@ -100,19 +100,19 @@
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
-  fill: #404743;
+  fill: #0f0f0f;
   transition: all .35s;
 }
 
 .link_login a:hover{
   width: 15vw;
-  border: 0.3vw solid #404743;
+  border: 0.3vw solid  #0f0f0f;
   background: transparent;
-  color: #404743;
+  color: #0f0f0f;
 }
 
 .link_login a:hover + .iconl{
-  border: 0.3vw solid #404743;
+  border: 0.3vw solid #0f0f0f;
   right: -25%;
 }
   .signup{
@@ -133,12 +133,12 @@
     line-height: 8vh;
     font-weight: bold;
     text-decoration: none;
-    background: #333;
+    background:  #0f0f0f;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1vw;
-    border: 0.1vh solid #333;
+    border: 0.1vh solid  #0f0f0f;
     transition: all .35s;
   }
   
@@ -160,19 +160,19 @@
     top: calc(50% - 15px);
     left: calc(50% - 15px);
     transform: rotate(-45deg);
-    fill: #404743;
+    fill:  #0f0f0f;
     transition: all .35s;
   }
   
   .link_signup a:hover{
     width: 15vw;
-    border: 0.3vw solid #404743;
+    border: 0.3vw solid #0f0f0f;
     background: transparent;
-    color: #404743;
+    color: #0f0f0f;
   }
   
   .link_signup a:hover + .icons{
-    border: 0.3vw solid #404743;
+    border: 0.3vw solid #0f0f0f;
     right: -25%;
   }
 
