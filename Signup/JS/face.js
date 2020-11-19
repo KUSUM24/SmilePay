@@ -46,10 +46,11 @@ async function capture() {
     localStorage.setItem(`img${i}`,JSON.stringify(detections.descriptor));
     i--;
     localStorage.setItem('imgNo',i.toString());
-    await location.reload();
-    setTimeout(document.getElementById('imgNo').innerHTML = `Photos to be captured:` + i.toString(),5000);
+    location.reload();
     if(i<=0)
     window.location.href = 'finalSignup.html';
-    else
-    startVideo();
+    else{
+        window.alert('photos left:' + i.toString())
+        startVideo();
+    }
 }
