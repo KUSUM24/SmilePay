@@ -29,7 +29,7 @@
             position: absolute;
             top: 90vh;
         }
-        /* button{
+        button{
             color: red;
             background: black ;
         }
@@ -50,4 +50,4 @@
             height: 100vh;
             background-image: url(./../../Global/Images/secondBack.jpeg);
             background-size: 100% 100%;
-        } */
+        }
