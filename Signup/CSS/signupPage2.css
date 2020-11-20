@@ -16,8 +16,7 @@
     top: 25vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;
-    
+    font-size: 3vh;  
 }
 .number input{
     width: 100%;
@@ -28,8 +27,8 @@
     outline: none;
     background: none;
     font-size: 4vh;
+    border-bottom: 3px solid blue;
 }
-
 .number label{
     position: absolute;
     bottom: 0vh;
@@ -37,7 +36,6 @@
     width: 100%;
     height: 280%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
 }
 .number label::after
 {
@@ -47,8 +45,6 @@
     bottom: -0.1vh;
     height: 100%;
     width: 100%;
-    /* border-bottom: 3px solid blue; */
-    
 }
 .content-number{
     position: absolute;
@@ -73,7 +69,6 @@
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    
 }
 .number2 input{
     width: 100%;
@@ -84,8 +79,8 @@
     outline: none;
     background: none;
     font-size: 4vh;
+    border-bottom: 3px solid blue;
 }
-
 .number2 label{
     position: absolute;
     bottom: 0vh;
@@ -93,7 +88,6 @@
     width: 100%;
     height: 280%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
 }
 .number2 label::after
 {
@@ -103,8 +97,6 @@
     bottom: -0.1vh;
     height: 100%;
     width: 100%;
-    /* border-bottom: 3px solid blue; */
-    
 }
 .content-number{
     position: absolute;
@@ -128,8 +120,7 @@
     top: 55vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;
-    
+    font-size: 3vh;   
 }
 .number3 input{
     width: 100%;
@@ -140,8 +131,8 @@
     outline: none;
     background: none;
     font-size: 4vh;
+    border-bottom: 3px solid blue;
 }
-
 .number3 label{
     position: absolute;
     bottom: 0vh;
@@ -149,7 +140,6 @@
     width: 100%;
     height: 280%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
 }
 .number3 label::after
 {
@@ -158,9 +148,7 @@
     left: 0vw;
     bottom: -0.1vh;
     height: 100%;
-    width: 100%;
-    /* border-bottom: 3px solid blue; */
-    
+    width: 100%;   
 }
 .content-number{
     position: absolute;
@@ -175,214 +163,4 @@
     font-size: 4vh;
     color: black;
 }
-input[type=number] {
-
-    border-bottom: 3px solid blue;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-  }
-input[type=number]:focus {
-    border-bottom: 3px solid black;
-  }
   
-
-  .back-button{
-    position: absolute;
-    top: 85%;
-    left: 20%;
-    transform:translate(-50%,-50%);
-    /* color: #f0f3f7; */
-    color: #6f07f8f3; 
-    font-size: 30px;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 10px 20px 10px rgba(0,0,0,.5);
-    background:rgb(20, 20, 20) ;
-    /* border:black; */
-    /* z-index: 3; */
-    align-items: center;
-    /* padding-left: 50px; */
-    overflow: hidden;
-}
-
-a.back-button span:nth-child(1){
-    position: absolute;
-    top:0;
-    left: 0;
-    width:100%;
-    height: 2px;
-    background:linear-gradient(to right,#d0f724,#ff17d8);
-    animation: animate1 2s linear infinite ;
-}
-@keyframes animate1{
-    0%{
-        tranform:translateX(-100%);
-    }
-    100%{
-        transform: translateX(100%)
-    }
-}
-a.back-button span:nth-child(2){
-    position: absolute;
-    top:0;
-    right: 0;
-    width:2px;
-    height: 100%;
-    background:linear-gradient(to bottom,#d0f724,#ff17d8);
-    animation: animate2 2s linear infinite ;
-    animation-delay:1s ;
-}
-@keyframes animate2{
-    0%{
-        tranform:translateY(-100%);
-    }
-    100%{
-        transform: translateY(100%)
-    }
-}
-a.back-button span:nth-child(3){
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width:100%;
-    height: 2px;
-    background:linear-gradient(to left,#d0f724,#ff17d8);
-    animation: animate3 2s linear infinite ;
-}
-@keyframes animate3{
-    0%{
-        tranform:translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%)
-    }
-}
-a.back-button span:nth-child(4){
-    position: absolute;
-    top:0;
-    left: 0;
-    width:2px;
-    height: 100%;
-    background:linear-gradient(to top,#d0f724,#ff17d8);
-    animation: animate4 2s linear infinite ;
-    animation-delay: 1s;
-}
-@keyframes animate4{
-    0%{
-        tranform:translateY(100%);
-    }
-    100%{
-        transform: translateY(-100%)
-    }
-}
-.back-button:active {
-    position: absolute;
-    top: 68.5vh;
-    left: 2vw;
-    background-color: #a39d9d;
-    box-shadow: 0 5px #666;
-    transform: translateX(2px);
-  }
-
-
-
-/* NEXT BUTTON */
-.next-button{
-    position: absolute;
-    top: 85%;
-    left: 80%;
-    transform:translate(-50%,-50%);
-    /* color: #f0f3f7; */
-    color: #6f07f8f3; 
-    font-size: 30px;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 10px 20px 10px rgba(0,0,0,.5);
-    background:rgb(20, 20, 20) ;
-    /* border:black; */
-    /* z-index: 3; */
-    align-items: center;
-    /* padding-left: 50px; */
-    overflow: hidden;
-}
-a.next-button span:nth-child(1){
-    position: absolute;
-    top:0;
-    left: 0;
-    width:100%;
-    height: 2px;
-    background:linear-gradient(to right,#d0f724,#ff17d8);
-    animation: animate1 2s linear infinite ;
-}
-@keyframes animate1{
-    0%{
-        tranform:translateX(-100%);
-    }
-    100%{
-        transform: translateX(100%)
-    }
-}
-a.next-button span:nth-child(2){
-    position: absolute;
-    top:0;
-    right: 0;
-    width:2px;
-    height: 100%;
-    background:linear-gradient(to bottom,#d0f724,#ff17d8);
-    animation: animate2 2s linear infinite ;
-    animation-delay:1s ;
-}
-@keyframes animate2{
-    0%{
-        tranform:translateY(-100%);
-    }
-    100%{
-        transform: translateY(100%)
-    }
-}
-a.next-button span:nth-child(3){
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width:100%;
-    height: 2px;
-    background:linear-gradient(to left,#d0f724,#ff17d8);
-    animation: animate3 2s linear infinite ;
-}
-@keyframes animate3{
-    0%{
-        tranform:translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%)
-    }
-}
-a.next-button span:nth-child(4){
-    position: absolute;
-    top:0;
-    left: 0;
-    width:2px;
-    height: 100%;
-    background:linear-gradient(to top,#d0f724,#ff17d8);
-    animation: animate4 2s linear infinite ;
-    animation-delay: 1s;
-}
-@keyframes animate4{
-    0%{
-        tranform:translateY(100%);
-    }
-    100%{
-        transform: translateY(-100%)
-    }
-}
-.next-button:active {
-    position: absolute;
-    top: 68.5vh;
-    left: 23vw;
-    background-color: #a39d9d;
-    box-shadow: 0 5px #666;
-    transform: translateX(2px);
-  } 
