@@ -47,8 +47,26 @@ async function capture() {
     i--;
     localStorage.setItem('imgNo',i.toString());
     location.reload();
-    if(i<=0)
-    window.location.href = 'finalSignup.html';
+    if(i<=0){
+        let userFirst = JSON.parse(localStorage.getItem('firstDetails'));
+        let userSecond = JSON.parse(localStorage.getItem('secondDetails'));
+        let userThird = JSON.parse(localStorage.getItem('thirdDetails'));
+        let currentUser = {
+            Name: userFirst.Name,
+            Number: userFirst.Number,
+            Email: userFirst.Email,
+            Account: userSecond.Account,
+            Aadhar: userSecond.Aadhar,
+            Pan: userSecond.Pan,
+            Username: userThird.Username,
+            Password: userThird.Password,
+            Pin: userThird.Pin,
+            FaceDetails: [JSON.parse(localStorage.getItem('img1')),JSON.parse(localStorage.getItem('img2')),JSON.parse(localStorage.getItem('img3')),JSON.parse(localStorage.getItem('img4')),JSON.parse(localStorage.getItem('img5'))]
+        };
+        localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
+        localStorage.setItem('backupAllUserDetails',localStorage.getItem('allUserDetails'));
+        window.location.href = 'finalSignup.html';
+    }
     else{
         window.alert('photos left:' + i.toString())
         startVideo();

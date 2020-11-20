@@ -1,4 +1,4 @@
-
+let flag = false;
 var thirdDetails = "";
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('submit3').addEventListener('click',addThirdDetails);
@@ -11,22 +11,26 @@ const addThirdDetails = (ev) => {
         Password2: document.getElementById("password2").value,
         Pin: document.getElementById("pin").value,
     }
+    let allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
+    for(let i = 0; i < allUserDetails.length; i++) {
+        if(allUserDetails[i].Username == userThird.Username) {
+            flag = true;
+            alert('Username is already taken');
+            break;
+        }
+        flag = false;
+    };
+    if(userThird.Password !== userThird.Password2) {
+        flag = true;
+        alert('password didnt match');
+    }
+    if(userThird.Password.length<8) {
+        flag = true;
+        alert('password should be more then 8 characters');
+    }
     thirdDetails = JSON.stringify(userThird);
     localStorage.setItem('thirdDetails',thirdDetails);
     localStorage.setItem('imgNo','5');
+    if(!flag)
     window.location.href = "face.html";
 }
-let userFirst = JSON.parse(localStorage.getItem('firstDetails'));
-let userSecond = JSON.parse(localStorage.getItem('secondDetails'));
-let userThird = JSON.parse(localStorage.getItem('thirdDetails'));
-let currentUser = {
-    Name: userFirst.Name,
-    Number: userFirst.Number,
-    Email: userFirst.Email,
-    Account: userSecond.Account,
-    Aadhar: userSecond.Aadhar,
-    Pan: userSecond.Pan,
-    Username: userThird.Username,
-    Password: userThird.Password,
-    Pin: userThird.Pin
-};
