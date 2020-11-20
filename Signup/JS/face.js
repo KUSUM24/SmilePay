@@ -64,11 +64,15 @@ async function capture() {
             FaceDetails: [JSON.parse(localStorage.getItem('img1')),JSON.parse(localStorage.getItem('img2')),JSON.parse(localStorage.getItem('img3')),JSON.parse(localStorage.getItem('img4')),JSON.parse(localStorage.getItem('img5'))]
         };
         localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
-        localStorage.setItem('backupAllUserDetails',localStorage.getItem('allUserDetails'));
+        backupData();
+        resetData();
         window.location.href = 'finalSignup.html';
     }
     else{
         window.alert('photos left:' + i.toString())
         startVideo();
     }
+}
+const backupData = () => {
+    localStorage.setItem('backupAllUserDetails',localStorage.getItem('allUserDetails'));
 }

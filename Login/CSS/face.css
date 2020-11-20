@@ -1,0 +1,53 @@
+  body {
+            margin: 0%;
+            padding: 0%;
+            width: 80vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+        canvas {
+            position: absolute;
+            left: 26vw;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        #imgNo {
+            position: absolute;
+            top: 80vh;
+        }
+        #video {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); 
+            /* position: absolute;
+            left: 23vw; */
+            padding-right: 20vw;
+        }
+        #totalImg {
+            position: absolute;
+            top: 90vh;
+        }
+        button{
+            color: red;
+            background: black ;
+        }
+        .backgroundImgFirst {
+            opacity: 0.5;
+            width: 25%;
+            height: 100vh;
+            background-image: url(./../../Global/Images/firstBack.png);
+            background-size: 100% 100%;
+            position: absolute;
+            left: -2vw;
+        }
+        .backgroundImgSecond {
+            position: absolute;
+            opacity: 0.5;
+            right: -3vw;
+            width: 30%;
+            height: 100vh;
+            background-image: url(./../../Global/Images/secondBack.jpeg);
+            background-size: 100% 100%;
+        }

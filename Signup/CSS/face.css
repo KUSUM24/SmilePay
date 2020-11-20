@@ -10,7 +10,7 @@
         }
         canvas {
             position: absolute;
-            left: 22vw;
+            left: 26vw;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
         }
