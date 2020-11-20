@@ -1,0 +1,47 @@
+  body {
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+        canvas {
+            position: absolute;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        #imgNo {
+            position: absolute;
+            top: 80vh;
+        }
+        #video {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); 
+        }
+        #totalImg {
+            position: absolute;
+            top: 90vh;
+        }
+        button{
+            color: red;
+            background: black ;
+        }
+        .backgroundImgFirst {
+            opacity: 0.5;
+            width: 25%;
+            height: 100vh;
+            background-image: url(./../../Global/Images/firstBack.png);
+            background-size: 100% 100%;
+        }
+        .backgroundImgSecond {
+            position: absolute;
+            opacity: 0.5;
+            right: 0vw;
+            width: 30%;
+            height: 100vh;
+            background-image: url(./../../Global/Images/secondBack.jpeg);
+            background-size: 100% 100%;
+        }
