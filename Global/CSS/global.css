@@ -73,9 +73,9 @@ input[type=password]:focus {
     transition: 0.5s;
     outline: none;
   }
-input[type=number]:focus {
-    border-bottom: 3px solid black;
-  }
+/* input[type=number]:focus {
+    /* border-bottom: 3px solid black; */
+  } */
   input[type=email] {
 
     border-bottom: 3px solid blue;

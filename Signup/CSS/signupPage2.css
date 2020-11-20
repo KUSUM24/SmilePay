@@ -132,6 +132,7 @@
     background: none;
     font-size: 4vh;
     border-bottom: 3px solid blue;
+    text-transform: uppercase;
 }
 .number3 label{
     position: absolute;
