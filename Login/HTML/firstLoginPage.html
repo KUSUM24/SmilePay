@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login1</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./../CSS/firstLoginPage.css">
+    <script src="./../JS/login.js"></script>
 </head>
 
-<body>
+<body onload="resetUser()">
     <div class="background">
         <div class="backgroundImgFirst"></div>
         <div class="floatBox">
             <h2 class="signupHeading">Login </h2>
             <form action="">
                 <div class="signupForm">
-                    <li><input type="text" name="name" required />
+                    <li><input id = 'username' type="text" name="name" required />
                         <label for="username" class="label-username">
                             <span class="content-username">Username</span>
                         </label>
                     </li>
                 </div>
                 <div class="password">
-                    <li><input type="password" pass="pass" autocomplete="off" required />
+                    <li><input id = 'password' type="password" pass="pass" autocomplete="off" required />
                         <label for="password" class="label-password">
                             <span class="content-password">Password</span>
                         </label>
@@ -35,7 +36,6 @@
                     <a href="./LoginPage.html">
                         <div class="nextButton">Login</div>
                     </a> -->
-                    <button>
                     <a href="./../../Main/HTML/MainPage.html" class="back-button">
                         <span></span>
                         <span></span>
@@ -43,14 +43,13 @@
                         <span></span>
                         Back
                     </a>
-                    </button>
                     
-                    <a href="./LoginPage.html" class="next-button">
+                    <a  id = "login" class="next-button">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Next
+                        Login
                     </a>                
            </form>
         </div>
