@@ -11,18 +11,6 @@ const addSecondDetails = (ev) => {
         Pan: document.getElementById("pan").value
     }
     let allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
-    if(userSecond.Account.length!=10) {
-        alert('Account No should be of 10 digits');
-        flag = true;
-    }
-    if(userSecond.Aadhar.length!=12) {
-        alert('Aadhar No should be of 12 digits');
-        flag = true;
-    }
-    if(userSecond.Pan.length!=10) {
-        alert('Pan No should be of 10 digits');
-        flag = true;
-    }
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Account == userSecond.Account) {
             flag = true;
@@ -41,6 +29,18 @@ const addSecondDetails = (ev) => {
         }
         flag = false;
     };
+    if(userSecond.Account.length!=10) {
+        alert('Account No should be of 10 digits');
+        flag = true;
+    }
+    if(userSecond.Aadhar.length!=12) {
+        alert('Aadhar No should be of 12 digits');
+        flag = true;
+    }
+    if(userSecond.Pan.length!=10) {
+        alert('Pan No should be of 10 digits');
+        flag = true;
+    }
     secondDetails = JSON.stringify(userSecond);
     localStorage.setItem('secondDetails',secondDetails);
     if(!flag)
