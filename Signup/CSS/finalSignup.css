@@ -17,7 +17,7 @@
 .home-button{
     position: absolute;
     top: 80%;
-    left: 46%;
+    left: 47%;
     transform:translate(-50%,-50%);
     /* color: #f0f3f7; */
     color: #6f07f8f3; 
@@ -44,8 +44,8 @@
 }
 .home-button:active {
     position: absolute;
-    top: 70vh;
-    left: 2vw;
+    top: 77vh;
+    left: 42vw;
     background-color: #a39d9d;
     box-shadow: 0 5px #666;
     transform: translateX(2px);
