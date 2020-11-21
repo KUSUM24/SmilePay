@@ -331,7 +331,6 @@ a.next-button span:nth-child(4){
 .back:hover:after{
     transform: scaleX(0);
 }
-
 .back span{
     position: relative;
     z-index: 3;
@@ -380,7 +379,6 @@ a.next-button span:nth-child(4){
 .next:hover:after{
     transform: scaleX(0);
 }
-
 .next span{
     position: relative;
     z-index: 3;
