@@ -30,7 +30,7 @@ const addThirdDetails = (ev) => {
     }
     thirdDetails = JSON.stringify(userThird);
     localStorage.setItem('thirdDetails',thirdDetails);
-    localStorage.setItem('imgNo','5');
+    localStorage.setItem('imgNo','2');
     if(!flag)
     window.location.href = "face.html";
 }

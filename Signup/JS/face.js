@@ -62,8 +62,9 @@ async function capture() {
             Username: userThird.Username,
             Password: userThird.Password,
             Pin: userThird.Pin,
-            FaceDetails: [localStorage.getItem('img1'),localStorage.getItem('img2'),localStorage.getItem('img3'),localStorage.getItem('img4'),localStorage.getItem('img5')]
-        };
+            FaceDetails1: localStorage.getItem('img1'),
+            FaceDetails2: localStorage.getItem('img2')
+        }
         localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
         backupData();
         window.location.href = 'finalSignup.html';

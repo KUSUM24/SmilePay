@@ -7,5 +7,5 @@ const resetData = () => {
     localStorage.setItem('img3',"");
     localStorage.setItem('img4',"");
     localStorage.setItem('img5',"");
-    localStorage.setItem('imgNo',"5");
+    localStorage.setItem('imgNo',"2");
 }
