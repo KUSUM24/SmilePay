@@ -1,5 +1,5 @@
 const video = document.getElementById('video')
-var canvas;
+var canvas = document.getElementById('canvas');
 var loadAllFace;
 var imgDetails = [];
 var name;
@@ -8,7 +8,7 @@ Promise.all([
     faceapi.nets.faceLandmark68Net.loadFromUri('./../JS/models'),
     faceapi.nets.faceRecognitionNet.loadFromUri('./../JS/models'),
     faceapi.nets.ssdMobilenetv1.loadFromUri('./../JS/models')
-])
+ ])
 .then(startVideo)
 function startVideo() {
     navigator.getUserMedia(
@@ -17,7 +17,6 @@ function startVideo() {
         err => console.error(err)
         )
 }
-
 video.addEventListener('play', () => {
     if(imgDetails.length>1) {
         var context = canvas.getContext('2d');
@@ -30,10 +29,6 @@ video.addEventListener('play', () => {
     loadAllFace = loggedInUser.FaceDetails;
     name = loggedInUser.Name;
     faceWithName = [{name:name,descriptors: loadAllFace}];
-    
-    //have to make faceMatcher
-
-    console.log(faceMatcher);
     faceapi.matchDimensions(canvas, displaySize)
     setInterval(async () => {
         const detections = await faceapi.detectAllFaces(video,
@@ -48,6 +43,7 @@ async function capture() {
     canvas = faceapi.createCanvasFromMedia(video)
     var context = canvas.getContext('2d');
     var data = canvas.toDataURL('image/jpg')
+    console.log(data);
     const img = await faceapi.fetchImage(data)
     const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
     data = detections.descriptor;

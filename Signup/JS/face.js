@@ -1,5 +1,6 @@
 const video = document.getElementById('video')
 var canvas;
+var i;
 var imgDetails = [];
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('./../JS/models'),
@@ -38,15 +39,15 @@ async function capture() {
     canvas = faceapi.createCanvasFromMedia(video)
     var context = canvas.getContext('2d');
     var data = canvas.toDataURL('image/jpg')
-    const img = await faceapi.fetchImage(data)
-    const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
-    console.log(detections.descriptor);
-    data = detections.descriptor;
+    // console.log(data);
+    // const img = await faceapi.fetchImage(data)
+    // const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
+    // data = detections.descriptor;
     i = parseInt(localStorage.getItem('imgNo'));
-    localStorage.setItem(`img${i}`,JSON.stringify(detections.descriptor));
+    localStorage.setItem(`img${i}`,data);
     i--;
     localStorage.setItem('imgNo',i.toString());
-    location.reload();
+    console.log(i);
     if(i<=0){
         let userFirst = JSON.parse(localStorage.getItem('firstDetails'));
         let userSecond = JSON.parse(localStorage.getItem('secondDetails'));
@@ -61,15 +62,15 @@ async function capture() {
             Username: userThird.Username,
             Password: userThird.Password,
             Pin: userThird.Pin,
-            FaceDetails: [JSON.parse(localStorage.getItem('img1')),JSON.parse(localStorage.getItem('img2')),JSON.parse(localStorage.getItem('img3')),JSON.parse(localStorage.getItem('img4')),JSON.parse(localStorage.getItem('img5'))]
+            FaceDetails: [localStorage.getItem('img1'),localStorage.getItem('img2'),localStorage.getItem('img3'),localStorage.getItem('img4'),localStorage.getItem('img5')]
         };
         localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
         backupData();
-        resetData();
         window.location.href = 'finalSignup.html';
     }
     else{
         window.alert('photos left:' + i.toString())
+        location.reload();
         startVideo();
     }
 }
