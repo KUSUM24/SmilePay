@@ -73,9 +73,9 @@ input[type=password]:focus {
     transition: 0.5s;
     outline: none;
   }
-/* input[type=number]:focus {
-    /* border-bottom: 3px solid black; */
-  } */
+input[type=number]:focus {
+    border-bottom: 3px solid black;
+  }
   input[type=email] {
 
     border-bottom: 3px solid blue;
@@ -288,5 +288,101 @@ a.next-button span:nth-child(4){
     100%{
         transform: translateY(-100%)
     }
+}
+.back{
+    position: absolute;
+    top: 70vh;
+    left: 4vw;
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(6, 142, 233);
+}
+.back::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: rgb(6, 142, 233)    ;
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+}
+.back:hover:before{
+    transform: scaleY(0);
+}
+.back::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 6px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: rgb(6, 142, 233);
+    transition: .5s ease-in-out;
+    transform: scaleX(1);
+}
+.back:hover:after{
+    transform: scaleX(0);
+}
+
+.back span{
+    position: relative;
+    z-index: 3;
+}
+
+
+.next{
+    position: absolute;
+    top: 70vh;
+    left: 22vw;
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    background-color:rgb(0, 195, 255);
+}
+.next::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background:rgb(0, 195, 255);
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+}
+.next:hover:before{
+    transform: scaleY(0);
+}
+.next::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 6px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background:rgb(0, 195, 255) ;
+    transition: .5s ease-in-out;
+    transform: scaleX(1);
+}
+.next:hover:after{
+    transform: scaleX(0);
+}
+
+.next span{
+    position: relative;
+    z-index: 3;
 }
 
