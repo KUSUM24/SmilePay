@@ -39,10 +39,6 @@ async function capture() {
     canvas = faceapi.createCanvasFromMedia(video)
     var context = canvas.getContext('2d');
     var data = canvas.toDataURL('image/jpg')
-    // console.log(data);
-    // const img = await faceapi.fetchImage(data)
-    // const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
-    // data = detections.descriptor;
     i = parseInt(localStorage.getItem('imgNo'));
     localStorage.setItem(`img${i}`,data);
     i--;
