@@ -28,7 +28,7 @@
     z-index: 1;
     /* background: linear-gradient(to bottom right, #f077ea, #9146f5, #7ae3f5, #69d9f5, #9146f5, #f330e9); */
     /* background: white; */
-    background: linear-gradient(to right top,rgb(255, 3, 242),rgb(253, 66, 213), rgb(248, 157, 236), rgb(248, 157, 236),rgb(253, 66, 213),rgb(255, 3, 242));    top: 7vh;
+    background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));top: 7vh;
     right: 11vw;
     height: 85vh;
     width: 70%;
@@ -39,20 +39,20 @@
 .sideImg {
     position: relative;
     margin-left: auto;
-    margin-right: 10px;
+    left: -3vh;
     top: 8vh;
     width: 50%;
-    height: 65vh;
+    height: 67vh;
     background-image: url(./../Images/Side3d.png);
     background-size: 100% 100%;
 }
 .logo {
     position: absolute;
-    margin-top: -60vh;
-    margin-left: 11vh;
+    margin-top: -65vh;
+    margin-left: 12vh;
     width: 30%;
-    height: 30vh;
-    background-image: url(./../Images/smilepay.gif);
+    height: 35vh;
+    background-image: url(./../Images/logo1.png);
     background-size: 100% 100%;
 }
 .login{
@@ -117,7 +117,7 @@
 }
   .signup{
     position: absolute;
-    top: 78%;
+    top: 83%;
     left: 24%;
     transform: translate(-50%, -50%);
   }
@@ -179,12 +179,13 @@
 .line {
     position: relative;
     width: 30vw;
+    height: -1vh;
     border: solid;
     /* border-width: .3vh; */
     border-radius: 3vh;
     left: 5vh;
     top: -9vh;
-    border-color: black;
+    border-color: blue;
 }
 
 .floatBox button {
