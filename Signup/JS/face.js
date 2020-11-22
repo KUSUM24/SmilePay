@@ -58,6 +58,7 @@ async function capture() {
             Username: userThird.Username,
             Password: userThird.Password,
             Pin: userThird.Pin,
+            TotalAmount: 10000,
             FaceDetails1: localStorage.getItem('img1'),
             FaceDetails2: localStorage.getItem('img2')
         }

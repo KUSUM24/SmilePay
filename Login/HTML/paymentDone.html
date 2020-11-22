@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmilePay</title>
     <link rel="stylesheet" href="./../CSS/paymentDone.css">
+    <script src="./../JS/paymentDone.js"></script>
 </head>
-<body>
+<body onload="updateAmount()">
     <div class = "background">
         <div class = "backgroundImgFirst"></div>
         <div class="floatBox">
@@ -14,13 +15,11 @@
         </div>
         <img src="./../Images/Paymentsuccess.gif" class = "paymentSuccessful" alt="gif">
         <div class="backgroundImgSecond"></div>
-        <a href="./firstLoginPage.html" class="current-button">
+        <button onclick="displayBalance()" class = 'check-button'>
+            <p id = 'amount-text'>Current balance</p>
             <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Current Balance
-        </a>
+        </button>
+        <p id="amount"></p>
     </div>
 </body>
 </html>

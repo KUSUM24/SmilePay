@@ -1,6 +1,7 @@
 const video = document.getElementById('video')
 var canvas = document.getElementById('canvas');
 var loadAllDetails = JSON.parse(localStorage.getItem('loggedInUser'));
+localStorage.setItem('amountDebited','false');
 var imgDetails = [];
 var name;
 var displaySize;
