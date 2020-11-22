@@ -39,11 +39,11 @@
 .sideImg {
     position: relative;
     margin-left: auto;
-    left: -3vh;
-    top: 8vh;
-    width: 50%;
-    height: 67vh;
-    background-image: url(./../Images/Side3d.png);
+    left: -2vh;
+    top: 10vh;
+    width: 55%;
+    height: 70vh;
+    background-image: url(./../../Login/Images/sideBlue.png);
     background-size: 100% 100%;
 }
 .logo {
