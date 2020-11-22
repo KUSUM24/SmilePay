@@ -39,10 +39,10 @@
 .sideImg {
     position: relative;
     margin-left: auto;
-    left: -2vh;
+    left: -3vh;
     top: 10vh;
     width: 55%;
-    height: 70vh;
+    height: 67vh;
     background-image: url(./../../Login/Images/sideBlue.png);
     background-size: 100% 100%;
 }
