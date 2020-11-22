@@ -10,7 +10,7 @@
         }
         canvas {
             position: absolute;
-            left: 26vw;
+            left: 23vw;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
         }
@@ -32,6 +32,7 @@
         button{
             color: red;
             background: black ;
+            z-index: 1;
         }
         .backgroundImgFirst {
             opacity: 0.5;
