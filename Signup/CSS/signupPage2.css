@@ -8,43 +8,46 @@
     font-size: 5vh;
 }
 .number {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 25vh;
+    width: 65%;
+    position: relative;
+    top: 20vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;  
+    font-size: 3vh;
+    overflow: hidden;
+    
 }
 .number input{
     width: 100%;
     height: 50%;
-    color:white;
-    padding-top: 1.8vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
-    border-bottom: 3px solid blue;
+    overflow: auto;
 }
+
 .number label{
     position: absolute;
     bottom: 0vh;
-    left: 0vw;
+    left: 0%;
     width: 100%;
-    height: 280%;
+    height: 100%;
     pointer-events: none;
+    border-bottom: 1px solid black;
 }
 .number label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
     width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
 }
 .content-number{
     position: absolute;
@@ -59,44 +62,51 @@
     font-size: 4vh;
     color: black;
 }
+.number input:focus +.label-number::after,
+.number input:valid + .label-number::after{
+    transform: translateX(0%);
+}
 .number2 {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 40vh;
+    width: 65%;
+    position: relative;
+    top: 25vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
+    overflow: hidden;
+    
 }
 .number2 input{
     width: 100%;
     height: 50%;
-    color: white;
-    padding-top: 1.8vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
-    border-bottom: 3px solid blue;
+    overflow: auto;
 }
+
 .number2 label{
     position: absolute;
     bottom: 0vh;
-    left: 0vw;
+    left: 0%;
     width: 100%;
-    height: 280%;
+    height: 100%;
     pointer-events: none;
+    border-bottom: 1px solid black;
 }
 .number2 label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
     width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
 }
 .content-number{
     position: absolute;
@@ -111,45 +121,51 @@
     font-size: 4vh;
     color: black;
 }
+.number2 input:focus +.label-number::after,
+.number2 input:valid + .label-number::after{
+    transform: translateX(0%);
+}
 .number3 {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 55vh;
+    width: 65%;
+    position: relative;
+    top: 30vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;   
+    font-size: 3vh;
+    overflow: hidden;
+    
 }
 .number3 input{
     width: 100%;
     height: 50%;
-    color: white;
-    padding-top: 1.8vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
-    border-bottom: 3px solid blue;
-    text-transform: uppercase;
+    overflow: auto;
 }
+
 .number3 label{
     position: absolute;
     bottom: 0vh;
-    left: 0vw;
+    left: 0%;
     width: 100%;
-    height: 280%;
+    height: 100%;
     pointer-events: none;
+    border-bottom: 1px solid black;
 }
 .number3 label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
-    width: 100%;   
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
 }
 .content-number{
     position: absolute;
@@ -164,4 +180,9 @@
     font-size: 4vh;
     color: black;
 }
-  
+.number3 input:focus +.label-number::after,
+.number3 input:valid + .label-number::after{
+    transform: translateX(0%);
+}
+
+

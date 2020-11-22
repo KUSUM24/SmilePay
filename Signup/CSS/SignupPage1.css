@@ -9,49 +9,44 @@
 }
 
 .signupForm {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 28vh;
+    width: 65%;
+    position: relative;
+    top: 20vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    
+    overflow: hidden;
 }
 .signupForm input{
     width: 100%;
     height: 50%;
-    color: white;
-    padding-top: 1.8vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
+    overflow: auto;
 }
-
-
-
 .signupForm label{
     position: absolute;
     bottom: 0vh;
-    left: 0vw;
+    left: 0%;
     width: 100%;
-    height: 280%;
+    height: 100%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
 }
 .signupForm label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
     width: 100%;
-    /* border-bottom: 3px solid blue; */
-    
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
 }
 .content-name{
     position: absolute;
@@ -66,52 +61,51 @@
     font-size: 4vh;
     color: black;
 }
+.signupForm input:focus +.label-name::after,
+.signupForm input:valid + .label-name::after{
+    transform: translateX(0%);
+}
 .number {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 43vh;
+    width: 65%;
+    position: relative;
+    top: 25vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     
 }
 .number input{
     width: 100%;
     height: 50%;
-    color: white;
-    padding-top: 1.8vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
+    overflow: auto;
 }
 
 .number label{
     position: absolute;
-    bottom: -.1vh;
-    left: 0vw;
+    bottom: 0vh;
+    left: 0%;
     width: 100%;
-    height: 280%;
+    height: 100%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
 }
 .number label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
     width: 100%;
-    /* border-bottom: 3px solid blue; */
-    /* transform: translateX(-100%);
-    transition: transform 1s ease; */
-    
-    
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
 }
 .content-number{
     position: absolute;
@@ -126,52 +120,51 @@
     font-size: 4vh;
     color: black;
 }
-/* .number input:focus +.label-number::after,
+.number input:focus +.label-number::after,
 .number input:valid + .label-number::after{
     transform: translateX(0%);
-} */
+}
 .email {
-    /* display: flex; */
-    width: 50%;
+    width: 65%;
     position: relative;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 58vh;
+    top: 30vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    
+    overflow: hidden; 
 }
 .email input{
     width: 100%;
     height: 100%;
     color: white;
-    padding-top: 0.4vh;
+    padding-top: 15px;
     border: none;
     outline: none;
     background: none;
     font-size: 4vh;
+    overflow: auto;
 }
 
 .email label{
     position: absolute;
     bottom: 0vh;
-    left: 0vw;
+    left: 0%;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
 }
 .email label::after
 {
     content: "";
     position: absolute;
     left: 0vw;
-    bottom: -0.1vh;
+    bottom: -0.2vh;
     height: 100%;
     width: 100%;
-    /* border-bottom: 3px solid blue; */
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
     
 }
 .content-email{
@@ -187,9 +180,10 @@
     font-size: 4vh;
     color: black;
 }
- .email input:focus +.label-number::after,
-.email input:valid + .label-number::after{
+ .email input:focus +.label-email::after,
+.email input:valid + .label-email::after{
     transform: translateX(0%);
+<<<<<<< Updated upstream
 } 
 
 input[type=text] {
@@ -222,3 +216,6 @@ input[type=number]:focus {
 input[type=email]:focus {
     border-bottom: 3px solid black;
   }
+=======
+}
+>>>>>>> Stashed changes

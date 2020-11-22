@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup | User Details</title>
     <link rel="stylesheet" href="./../CSS/signupPage3.css">
-    <script src = "./../JS/signup3.js"></script>
+    <script src="./../JS/signup3.js"></script>
     <script src="./../../Global/JS/values.js"></script>
 </head>
+
 <body onload="checkingThirdValues()">
-    <div class = "background">
-        <div class = "backgroundImgFirst"></div>
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
         <div class="floatBox">
-            <h2 class = "signupHeading">User Details: </h2>
+            <h2 class="signupHeading">User Details: </h2>
             <form action="">
                 <div class="signupForm">
-                    <li><input id = 'username' type="text" name="name" required />
-                        <label for="username" class="label-username">
-                            <span class="content-username">Username</span>
-                        </label>
-                    </li>
+                    <input id='username' type="text" name="name" required />
+                    <label for="name" class="label-name">
+                        <span class="content-name">Username</span>
+                    </label>
                 </div>
                 <div class="password">
-                    <li><input id = 'password' type="password" pass="pass" autocomplete="off" required />
-                        <label for="password" class="label-password">
-                            <span class="content-password">Password</span>
-                        </label>
-                    </li>
-                </div> 
+                    <input id='password' type="password" pass="pass" autocomplete="off" required />
+                    <label for="password" class="label-password">
+                        <span class="content-password">Password</span>
+                    </label>
+                </div>
                 <div class="passwordc">
-                    <li><input id = 'password2' type="password" pass="pass" autocomplete="off" required />
-                        <label for="password" class="label-password">
-                            <span class="content-password">Confirm Password</span>
-                        </label>
-                    </li>
-                </div> 
+                    <input id='password2' type="password" pass="pass" autocomplete="off" required />
+                    <label for="password" class="label-password">
+                        <span class="content-password">Confirm Password</span>
+                    </label>
+                </div>
                 <div class="passwordp">
-                    <li><input id = 'pin' type="password" pass="pass" autocomplete="off" required />
-                        <label for="pin" class="label-password">
-                            <span class="content-password">PIN</span>
-                        </label>
-                    </li>
-                </div> 
-                    
-                    <!-- <a href="./finalSignup.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
+                    <input id='pin' type="password" pass="pass" autocomplete="off" required />
+                    <label for="pin" class="label-password">
+                        <span class="content-password">PIN</span>
+                    </label>
+                </div>
+
+                <!-- <a href="./finalSignup.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
                     <a href="./signupPage2.html"><div class="backButton">Back</div></a> -->
-                    <!-- <a href="./SignupPage2.html" class="back-button">
+                <!-- <a href="./SignupPage2.html" class="back-button">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -58,15 +56,16 @@
                         <span></span>
                         <span></span>
                     </a> -->
-                    <a href="./signupPage2.html" border-color="black" class="back"><span>Back</span></a>
-                    <a href="./face.html" id = 'submit3' border-color="black" class="next">
-                        <span><img width="45vw" height="30vh" src="./../../Global/Images/camera.png" alt="img"></span>
-                    </a>
-                
+                <a href="./signupPage2.html" border-color="black" class="back"><span>Back</span></a>
+                <a href="./face.html" id='submit3' border-color="black" class="next">
+                    <span><img width="45vw" height="30vh" src="./../../Global/Images/camera.png" alt="img"></span>
+                </a>
+
             </form>
         </div>
         <div class="backgroundImgSecond"></div>
     </div>
-    
+
 </body>
+
 </html>
