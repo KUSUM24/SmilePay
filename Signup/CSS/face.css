@@ -10,7 +10,7 @@ body {
 }
 canvas {
     position: absolute;
-    left: 23vw;
+    left: 49vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -34,11 +34,10 @@ button{
     top: 90vh;
     left: 45vw;
     padding: 4px 20px;
-    color: rgb(8, 8, 8);
-    background: rgb(226, 161, 39) ;
+    color:white;
+    background: rgb(8, 68, 235) ;
     z-index: 1;
     font-size: 3vh;
-    /* font-weight: ; */
 }
 .backgroundImgFirst {
     opacity: 0.5;
@@ -65,4 +64,5 @@ button{
     left: 40vw;
     border:2px solid rgb(255, 0, 0);
     padding: 4px 20px;
+    /* background: linear-gradient(to left, rgb(0, 60, 255),rgb(0, 102, 255),rgb(0, 195, 255));     */
 }
