@@ -23,7 +23,7 @@ canvas {
     transform: scaleX(-1); 
     /* position: absolute;
     left: 23vw; */
-    padding-right: 20vw;
+    padding-right: 16vw;
 }
 #totalImg {
     position: absolute;
@@ -31,12 +31,13 @@ canvas {
 }
 button{
     position: absolute;
-    top: 92vh;
-    left: 48vw;
-    padding: 5px 20px;
+    top: 90vh;
+    left: 45vw;
+    padding: 4px 20px;
     color: rgb(8, 8, 8);
-    background: rgb(2, 252, 114) ;
+    background: rgb(226, 161, 39) ;
     z-index: 1;
+    font-size: 3vh;
     /* font-weight: ; */
 }
 .backgroundImgFirst {
@@ -56,4 +57,12 @@ button{
     height: 100vh;
     background-image: url(./../../Global/Images/secondBack.jpeg);
     background-size: 100% 100%;
+}
+.writing{
+    color: white;
+    position: absolute;
+    top: -2.5vh;
+    left: 40vw;
+    border:2px solid rgb(255, 0, 0);
+    padding: 4px 20px;
 }
