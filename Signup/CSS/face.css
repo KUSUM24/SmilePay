@@ -33,7 +33,7 @@ button{
     position: absolute;
     top: 92vh;
     left: 48vw;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: rgb(8, 8, 8);
     background: rgb(2, 252, 114) ;
     z-index: 1;
