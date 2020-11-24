@@ -184,3 +184,26 @@
 .email input:valid + .label-email::after{
     transform: translateX(0%);
 }
+.alert-box{
+    position: relative;
+    left: 0vh;
+    /* top: 5vh; */
+    /* position: static; */
+    background-color: green;
+    font-size: 20px;
+    padding: 2vh;
+    color: #ffffff;
+}
+.close-alert{
+    font-size: 20px;
+    cursor: pointer;
+    /* padding-left: 20px; */
+    /* padding-right: 0%; */
+}
+/* .close-alert{
+    position: relative;
+    left: 10vh;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 30px;
+} */
