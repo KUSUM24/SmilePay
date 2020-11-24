@@ -53,7 +53,7 @@ button{
     z-index: 9999;
     padding: 4vh;
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 #box h1{
     color: #333;

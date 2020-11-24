@@ -65,11 +65,11 @@ async function capture() {
         localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
         backupData();
         // window.location.href = 'finalSignup.html';
+        
     }
     else{
-        document.getElementById("box");
-        location.reload();
-        startVideo();
+        var k=document.getElementById("box").style.display="block";
+
     }
 }
 const backupData = () => {
