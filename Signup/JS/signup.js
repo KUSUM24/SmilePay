@@ -15,17 +15,18 @@ const addFirstDetails = (ev) => {
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Number == userFirst.Number) {
             flag = true;
-            alert('Number Already Exists');
+            document.getElementById("exist-num").style.display="block";
             break;
-        } if(allUserDetails[i].Email == userFirst.Email) {
+        } 
+        if(allUserDetails[i].Email == userFirst.Email) {
             flag = true;
-            alert('Email Already Exists');
+            document.getElementById("exist-email").style.display="block";
             break;
         }
         flag = false;
     };
     if(userFirst.Number.length!=10){
-        alert('Number is incorrect');
+        document.getElementById("alert-num").style.display="block";
         flag = true;
     }
     firstDetails = JSON.stringify(userFirst);
@@ -33,4 +34,5 @@ const addFirstDetails = (ev) => {
     if(!flag){
         window.location.href = "signupPage2.html"
     }
+    
 }

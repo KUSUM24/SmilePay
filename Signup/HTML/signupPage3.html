@@ -40,27 +40,22 @@
                         <span class="content-password">PIN</span>
                     </label>
                 </div>
-
-                <!-- <a href="./finalSignup.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
-                    <a href="./signupPage2.html"><div class="backButton">Back</div></a> -->
-                <!-- <a href="./SignupPage2.html" class="back-button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Back
-                    </a>
-                    <a href="./face.html" id = 'submit3' class="next-button"><img width="55vw" height="35vh" src="./../../Login/Images/new camera.png" alt="img">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a> -->
                 <a href="./signupPage2.html" border-color="black" class="back"><span>Back</span></a>
                 <a href="./face.html" id='submit3' border-color="black" class="next">
                     <span><img width="45vw" height="30vh" src="./../../Global/Images/camera.png" alt="img"></span>
                 </a>
-
+                <div id="exist-username" class="alert-box show">
+                    Username Already Exists
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-confirm" class="alert-box show">
+                    Password Didn't Match
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-password" class="alert-box show">
+                    Password should be more than 8 Characters
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
             </form>
         </div>
         <div class="backgroundImgSecond"></div>

@@ -287,3 +287,14 @@
     position: relative;
     z-index: 3;
 }
+.alert-box{
+    position: relative;
+    top: -58vh;
+    left: -9vw;
+    width: 150%;
+    background-color: green;
+    font-size: 22px;
+    padding: 2vh;
+    color: #ffffff;
+    display: none;
+}

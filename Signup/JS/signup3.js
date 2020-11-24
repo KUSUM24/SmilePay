@@ -15,18 +15,18 @@ const addThirdDetails = (ev) => {
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Username == userThird.Username) {
             flag = true;
-            alert('Username is already taken');
+            document.getElementById("exist-username").style.display="block";
             break;
         }
         flag = false;
     };
     if(userThird.Password !== userThird.Password2) {
         flag = true;
-        alert('password didnt match');
+        document.getElementById("alert-confirm").style.display="block";
     }
     if(userThird.Password.length<8) {
         flag = true;
-        alert('password should be more then 8 characters');
+        document.getElementById("alert-password").style.display="block";
     }
     thirdDetails = JSON.stringify(userThird);
     localStorage.setItem('thirdDetails',thirdDetails);

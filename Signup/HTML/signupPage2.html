@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup | Bank Details</title>
     <link rel="stylesheet" href="./../CSS/SignupPage2.css">
-    <script src = "./../JS/signup2.js"></script>
+    <script src="./../JS/signup2.js"></script>
     <script src="./../../Global/JS/values.js"></script>
 </head>
+
 <body onload="checkingSecondValues()">
-    <div class = "background">
-        <div class = "backgroundImgFirst"></div>
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
         <div class="floatBox">
-            <h2 class = "signupHeading">Bank Details: </h2>
+            <h2 class="signupHeading">Bank Details: </h2>
             <form action="">
-                <div class = "number">
-                        <input id = 'account' type="number" number="number" autocomplete="off" required />
-                        <label for="number" class="label-number">
-                            <span class="content-number">Account No</span>
-                        </label>
+                <div class="number">
+                    <input id='account' type="number" number="number" autocomplete="off" required />
+                    <label for="number" class="label-number">
+                        <span class="content-number">Account No</span>
+                    </label>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Goverment ID</button>
                     <div class="dropdown-content">
-                   <p><button onclick="displayAadhar()">Aadhar No.</button></p>
-                   <p><button onclick="displayPan()">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
+                        <p><button onclick="displayAadhar()">Aadhar No.</button></p>
+                        <p><button onclick="displayPan()">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
                     </div>
                 </div>
-                <div id = 'displayAadhar' class = "number2">
-                        <input id = 'aadhar' type="number" number="number" autocomplete="off" required />
-                        <label for="number" class="label-number">
-                            <span class="content-number">Aadhar No</span>
-                        </label>
+                <div id='displayAadhar' class="number2">
+                    <input id='aadhar' type="number" number="number" autocomplete="off" required />
+                    <label for="number" class="label-number">
+                        <span class="content-number">Aadhar No</span>
+                    </label>
                 </div>
-                <div id = 'displayPan' class = "number3">
-                        <input id = 'pan' type="text" number="number" autocomplete="off" style="text-transform:uppercase" required />
-                        <label for="number" class="label-number">
-                            <span class="content-number">PAN No</span>
-                        </label>
+                <div id='displayPan' class="number3">
+                    <input id='pan' type="text" number="number" autocomplete="off" style="text-transform:uppercase"
+                        required />
+                    <label for="number" class="label-number">
+                        <span class="content-number">PAN No</span>
+                    </label>
                 </div>
                 <!-- <a href="./signupPage3.html"><div class="nextButton">Next</div></a>
                 <a href="./SignupPage1.html"><div class="backButton">Back</div></a> -->
@@ -55,12 +58,39 @@
                     <span></span>
                     Next
                 </a> -->
-                <a href="./SignupPage1.html" id = "back2" border-color="black" class="back"><span>Back</span></a>
-                <a href="./signupPage3.html" id = 'submit2' border-color="black" class="next"><span>Next</span></a>
+                <a href="./SignupPage1.html" id="back2" border-color="black" class="back"><span>Back</span></a>
+                <a href="./signupPage3.html" id='submit2' border-color="black" class="next"><span>Next</span></a>
+                <div id="exist-account" class="alert-box show">
+                    Account Already Exists
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="exist-aadhar" class="alert-box show">
+                    Aadhar Already Exists
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="exist-pan" class="alert-box show">
+                    Pan No Already Exists
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+
+                <div id="alert-account" class="alert-box show">
+                    Account No should be of 10 digits
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-aadhar" class="alert-box show">
+                    Aadhar No should be of 12 digits
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-pan" class="alert-box show">
+                    Pan No should be of 10 digits
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+
             </form>
         </div>
         <div class="backgroundImgSecond"></div>
     </div>
-    
+
 </body>
+
 </html>
