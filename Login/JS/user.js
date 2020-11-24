@@ -28,7 +28,7 @@ function payment(ev) {
         Account: document.getElementById('account').value
     }
     console.log(payDetails)
-    if(payDetails.Amount>TotalAmount) {
+    if(payDetails.Amount<TotalAmount) {
         alert('Insufficient balance');
     } else {
         localStorage.setItem('payDetails',JSON.stringify(payDetails));
