@@ -20,13 +20,20 @@
                             <span class="content-number">Account No</span>
                         </label>
                 </div>
-                <div class = "number2">
+                <div class="dropdown">
+                    <button class="dropbtn">Goverment ID</button>
+                    <div class="dropdown-content">
+                   <p><button onclick="displayAadhar()">Aadhar No.</button></p>
+                   <p><button onclick="displayPan()">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
+                    </div>
+                </div>
+                <div id = 'displayAadhar' class = "number2">
                         <input id = 'aadhar' type="number" number="number" autocomplete="off" required />
                         <label for="number" class="label-number">
                             <span class="content-number">Aadhar No</span>
                         </label>
                 </div>
-                <div class = "number3">
+                <div id = 'displayPan' class = "number3">
                         <input id = 'pan' type="text" number="number" autocomplete="off" style="text-transform:uppercase" required />
                         <label for="number" class="label-number">
                             <span class="content-number">PAN No</span>

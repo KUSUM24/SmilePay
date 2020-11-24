@@ -66,10 +66,60 @@
 .number input:valid + .label-number::after{
     transform: translateX(0%);
 }
+.dropbtn {
+    position: absolute;
+    background-color: #1013d8;
+    top: 32vh;
+    left: 5vw;
+    color: white;
+    padding: 2vh 8vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 38.5vh;
+    left: 5vw;
+    background-color: #f9f9f9;
+    min-width: 22.5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    border-style: none;
+    background-color: transparent;
+    color: black;
+    padding: 2vh 9vw;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content button:hover {
+      transform: scale(1.05);
+      background-color: #f1f1f1;
+      border-style: dashed;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #10c1d8;
+    color: black;
+  }
 .number2 {
+    display: none;
     width: 65%;
     position: relative;
-    top: 18vh;
+    top: 35vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
@@ -126,9 +176,10 @@
     transform: translateX(0%);
 }
 .number3 {
+    display: none;
     width: 65%;
     position: relative;
-    top: 21vh;
+    top: 35vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
