@@ -349,7 +349,7 @@ a.next-button span:nth-child(4){
     top: -46vh;
     left: -9vw;
     width: 150%;
-    background-color: green;
+    background-color: rgb(253, 2, 2);
     font-size: 22px;
     padding: 2vh;
     color: #ffffff;
@@ -371,7 +371,7 @@ a.next-button span:nth-child(4){
 	left:0;
 	bottom:0;
 	height: 4px;
-	background-color:#0ed40e;
+	background-color:#f59d29;
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 11;

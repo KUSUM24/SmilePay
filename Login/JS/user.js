@@ -31,7 +31,7 @@ function payment(ev) {
         document.getElementById("invalid-amount").style.display="block";
     }
     else
-        if(payDetails.Amount<TotalAmount) {
+        if(payDetails.Amount>TotalAmount) {
             document.getElementById("insufficient-balance").style.display="block";
         } else {
             localStorage.setItem('payDetails',JSON.stringify(payDetails));
