@@ -15,33 +15,33 @@ const addSecondDetails = (ev) => {
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Account == userSecond.Account) {
             flag = true;
-            alert('Account No Already Exists');
+            document.getElementById("exist-account").style.display="block";
             break;
         } 
         if(allUserDetails[i].Aadhar == userSecond.Aadhar) {
             flag = true;
-            alert('Aadhar Already Exists');
+            document.getElementById("exist-aadhar").style.display="block";
             break;
         }
         if(allUserDetails[i].Pan == userSecond.Pan) {
             flag = true;
-            alert('Pan No Already Exists');
+            document.getElementById("exist-pan").style.display="block";
             break;
         }
         flag = false;
     };
     if(userSecond.Account.length!=10) {
-        alert('Account No should be of 10 digits');
+        document.getElementById("alert-account").style.display="block";
         flag = true;
     }
     if(id == 1 && userSecond.Aadhar.length !=12) {
         console.log(userSecond.Aadhar.length);
-        alert('Aadhar No should be of 12 digits');
+        document.getElementById("alert-aadhar").style.display="block";
         flag = true;
     }
     if(id == 2 && userSecond.Pan.length !=10) {
         console.log(userSecond.Pan.length);
-        alert('Pan No should be of 10 digits');
+        document.getElementById("alert-pan").style.display="block";
         flag = true;
     }
     secondDetails = JSON.stringify(userSecond);

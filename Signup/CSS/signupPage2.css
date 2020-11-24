@@ -235,5 +235,15 @@
 .number3 input:valid + .label-number::after{
     transform: translateX(0%);
 }
-
+.alert-box{
+    position: relative;
+    top: -35vh;
+    left: -9vw;
+    width: 150%;
+    background-color: green;
+    font-size: 22px;
+    padding: 2vh;
+    color: #ffffff;
+    display: none;
+}
 
