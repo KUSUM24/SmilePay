@@ -6,8 +6,9 @@ function retryLeft() {
 }
 function checkRetryLeft() {
     let i = localStorage.getItem('retryLeft');
-    document.getElementById('retry-count').innerHTML = `Trails left: ${i}, then Your account will be temporarily blocked`
+    document.getElementById('retry-count').innerHTML = `Trails left: ${i}, then Your account will be permanently blocked`
     if(i<1) {
-        location.href = 'accountBlocked.html';
+        localStorage.setItem('accountBlocked','true');
+        location.href = './../../Main/HTML/MainPage.html';
     }
 }
