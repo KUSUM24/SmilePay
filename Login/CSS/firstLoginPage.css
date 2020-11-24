@@ -134,12 +134,11 @@
 }
 .alert-box{
     position: relative;
-    top: -58vh;
+    top: -32vh;
     left: -9vw;
     width: 150%;
     background-color: green;
     font-size: 22px;
     padding: 2vh;
     color: #ffffff;
-    display: none;
 }
