@@ -1,5 +1,5 @@
 let flag = false;
-var id = 0;
+var id = 1;
 var secondDetails = "";
 var userSecond;
 document.addEventListener('DOMContentLoaded',()=>{
@@ -51,6 +51,10 @@ const addSecondDetails = (ev) => {
     if(id == 2) {
         userSecond.Aadhar = "";
     }
+    if(id == 1 && userSecond.Aadhar.length == 12)
+    flag=false;
+    if(id == 2 && userSecond.Pan.length == 10)
+    flag=false;
     secondDetails = JSON.stringify(userSecond);
     localStorage.setItem('secondDetails',secondDetails);
     if(!flag)

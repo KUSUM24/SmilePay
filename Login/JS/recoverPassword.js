@@ -21,6 +21,7 @@ function recoverPassword(ev) {
         }
 }
 var allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
+console.log(allUserDetails)
 function updatePassword() {
 localStorage.setItem('loggedInUser',JSON.stringify(loggedInUser));
 for(let i = 1; i < allUserDetails.length; i++) {
