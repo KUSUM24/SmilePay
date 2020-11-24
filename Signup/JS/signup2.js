@@ -1,18 +1,19 @@
 let flag = false;
 var id = 0;
 var secondDetails = "";
+var userSecond;
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('submit2').addEventListener('click',addSecondDetails);
 });
 const addSecondDetails = (ev) => {
     ev.preventDefault();
-    let userSecond = {
+    userSecond = {
         Account: document.getElementById("account").value,
         Aadhar: document.getElementById("aadhar").value,
         Pan: document.getElementById("pan").value
     }
     let allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
-    for(let i = 0; i < allUserDetails.length; i++) {
+    for(let i = 1; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Account == userSecond.Account) {
             flag = true;
             document.getElementById("exist-account").style.display="block";
@@ -43,6 +44,12 @@ const addSecondDetails = (ev) => {
         console.log(userSecond.Pan.length);
         document.getElementById("alert-pan").style.display="block";
         flag = true;
+    }
+    if(id == 1) {
+        userSecond.Pan = "";
+    }
+    if(id == 2) {
+        userSecond.Aadhar = "";
     }
     secondDetails = JSON.stringify(userSecond);
     localStorage.setItem('secondDetails',secondDetails);
