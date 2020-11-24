@@ -55,6 +55,15 @@
             <a href="./firstLoginPage.html" border-color="black" class="back"><span>Logout</span></a>
             <a id='pay' href="./face.html" border-color="black" class="next"><span><img width="45vw" height="30vh"
                         src="./../../Global/Images/camera.png" alt="img"></span></a>
+            <div id="invalid-amount" class="alert-box show">
+                Amount cannot be 0 or Negative
+                <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+            </div>
+            <div id="insufficient-balance" class="alert-box show">
+                Insufficient Balance
+                <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+            </div>
+
         </div>
         <div class="backgroundImgSecond"></div>
     </div>

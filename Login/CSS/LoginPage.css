@@ -230,7 +230,7 @@ a.check-button span:nth-child(4){
     color: #0f0c0c;
     text-align: center;
     font-size: 1vw;
-    top: 21vh;
+    top: 18vh;
     left: 3vw;
     padding: 1vh;
     width: 10vw;
@@ -267,7 +267,7 @@ a.check-button span:nth-child(4){
   #amount {
       display: none;
       position: absolute;
-      top: 23vh;
+      top: 20vh;
       right: 5vw;
       font-size: 3vh;
   }
@@ -317,4 +317,14 @@ a.check-button span:nth-child(4){
 .next span{
     position: relative;
     z-index: 3;
+}
+.alert-box{
+    position: relative;
+    top: -12vh;
+    left: -9vw;
+    width: 150%;
+    background-color: green;
+    font-size: 22px;
+    padding: 2vh;
+    color: #ffffff;
 }

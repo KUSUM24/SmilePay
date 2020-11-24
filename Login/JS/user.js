@@ -28,11 +28,11 @@ function payment(ev) {
         Account: document.getElementById('account').value
     }
     if(payDetails.Amount<=0) {
-        alert('Amount cannot be 0 or negative')
+        document.getElementById("invalid-amount").style.display="block";
     }
     else
         if(payDetails.Amount<TotalAmount) {
-            alert('Insufficient balance');
+            document.getElementById("insufficient-balance").style.display="block";
         } else {
             localStorage.setItem('payDetails',JSON.stringify(payDetails));
             location.href = "face.html";

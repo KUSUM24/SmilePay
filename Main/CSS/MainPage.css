@@ -198,6 +198,27 @@
 }
 .describe{
   position: absolute;
-  bottom: 40vh;
+  top: 37vh;
+  left: 12vh;
   font-size: 130%;
+  /* color: white; */
 }
+.smilepay{
+  position: fixed;
+  top: 33vh;
+  left: 58vh;
+  font-size: 150%;
+  color:white;
+}
+/* .line1 {
+  position: relative;
+  width: 30vw;
+  height: -1vh;
+  border: solid;
+  border-width: .3vh;
+  border-radius: 3vh;
+  left: 5vh;
+  top: -40vh;
+  border-color: blue;
+} */
+
