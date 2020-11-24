@@ -10,4 +10,5 @@ const resetData = () => {
     localStorage.setItem('img4',"");
     localStorage.setItem('img5',"");
     localStorage.setItem('imgNo',"2");
+    localStorage.setItem('loggedInUser',"");
 }
