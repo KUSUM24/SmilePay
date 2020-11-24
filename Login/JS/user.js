@@ -1,4 +1,5 @@
 let flag = false;
+localStorage.setItem('retryLeft','3');
 const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 const TotalAmount = loggedInUser.TotalAmount;
 function displayBalance() {
