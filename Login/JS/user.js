@@ -27,12 +27,15 @@ function payment(ev) {
         Amount: document.getElementById('amount-text').value,
         Account: document.getElementById('account').value
     }
-    console.log(payDetails)
-    if(payDetails.Amount>TotalAmount) {
-        alert('Insufficient balance');
-    } else {
-        localStorage.setItem('payDetails',JSON.stringify(payDetails));
-        location.href = "face.html";
+    if(payDetails.Amount<=0) {
+        document.getElementById("invalid-amount").style.display="block";
     }
+    else
+        if(payDetails.Amount<TotalAmount) {
+            document.getElementById("insufficient-balance").style.display="block";
+        } else {
+            localStorage.setItem('payDetails',JSON.stringify(payDetails));
+            location.href = "face.html";
+        }
     ///here account is to be checked
 }
