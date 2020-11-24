@@ -129,4 +129,6 @@
     top:52vh;
     left: 5vw;
     color: black;
+    cursor: pointer;
+    font-size: 3vh;
 }
