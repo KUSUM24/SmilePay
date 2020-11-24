@@ -48,7 +48,7 @@
 }
 .logo {
     position: absolute;
-    margin-top: -65vh;
+    margin-top: -70vh;
     margin-left: 12vh;
     width: 30%;
     height: 35vh;
@@ -57,7 +57,7 @@
 }
 .login{
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 24%;
   transform: translate(-50%, -50%);
 }
@@ -117,7 +117,7 @@
 }
   .signup{
     position: absolute;
-    top: 83%;
+    top: 88%;
     left: 24%;
     transform: translate(-50%, -50%);
   }
@@ -184,7 +184,7 @@
     /* border-width: .3vh; */
     border-radius: 3vh;
     left: 5vh;
-    top: -9vh;
+    top: -4vh;
     border-color: blue;
 }
 
@@ -195,4 +195,9 @@
     background: transparent;
     border: transparent;
     color: white;
+}
+.describe{
+  position: absolute;
+  bottom: 40vh;
+  font-size: 130%;
 }
