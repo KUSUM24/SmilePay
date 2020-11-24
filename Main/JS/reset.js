@@ -11,4 +11,10 @@ const resetData = () => {
     localStorage.setItem('img5',"");
     localStorage.setItem('imgNo',"2");
     localStorage.setItem('loggedInUser',"");
+    let accountStatus = localStorage.getItem('accountBlocked');
+    if(accountStatus=='true') {
+        alert('Your account is blocked');
+        localStorage.setItem('allUserDetails',"{}"); //this is not correct solution for multiple users
+        localStorage.setItem('accountBlocked','false');
+    }
 }
