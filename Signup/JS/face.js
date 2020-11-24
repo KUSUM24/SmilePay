@@ -41,7 +41,7 @@ async function capture() {
     var data = canvas.toDataURL('image/jpg')
     i = parseInt(localStorage.getItem('imgNo'));
     localStorage.setItem(`img${i}`,data);
-    // i--;
+    i--;
     localStorage.setItem('imgNo',i.toString());
     console.log(i);
     if(i<=0){
@@ -64,12 +64,12 @@ async function capture() {
         }
         localStorage.setItem('allUserDetails',localStorage.getItem('allUserDetails')+","+JSON.stringify(currentUser));
         backupData();
-        // window.location.href = 'finalSignup.html';
+        window.location.href = 'finalSignup.html';
         
     }
     else{
         var k=document.getElementById("box").style.display="block";
-
+        document.getElementById('imgCount').innerHTML = "Photos left: " + i.toString();
     }
 }
 const backupData = () => {
