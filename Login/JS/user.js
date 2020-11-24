@@ -27,12 +27,15 @@ function payment(ev) {
         Amount: document.getElementById('amount-text').value,
         Account: document.getElementById('account').value
     }
-    console.log(payDetails)
-    if(payDetails.Amount<TotalAmount) {
-        alert('Insufficient balance');
-    } else {
-        localStorage.setItem('payDetails',JSON.stringify(payDetails));
-        location.href = "face.html";
+    if(payDetails.Amount<=0) {
+        alert('Amount cannot be 0 or negative')
     }
+    else
+        if(payDetails.Amount<TotalAmount) {
+            alert('Insufficient balance');
+        } else {
+            localStorage.setItem('payDetails',JSON.stringify(payDetails));
+            location.href = "face.html";
+        }
     ///here account is to be checked
 }
