@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login2</title>
     <link rel="stylesheet" href="./../CSS/LoginPage.css">
-    <script src = "./../JS/user.js"></script>
+    <script src="./../JS/user.js"></script>
 </head>
+
 <body>
-    <div class = "background">
-        <div class = "backgroundImgFirst"></div>
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
         <div class="floatBox">
-            <h2 class = "signupHeading">Welcome to SmilePay</h2>
-            <div class = "number">
+            <h2 class="signupHeading">Welcome to SmilePay</h2>
+            <div class="number">
                 <li>
-                    <input id = 'amount-text' type="number" number="number" autocomplete="off" required />
+                    <input id='amount-text' type="number" number="number" autocomplete="off" required />
                     <label for="number" class="label-number">
                         <span class="content-number">Enter amount</span>
                     </label>
                 </li>
             </div>
-            <div class = "account">
+            <div class="account">
                 <li>
-                    <input id = 'account' type="number" account="account" autocomplete="off" required />
+                    <input id='account' type="number" account="account" autocomplete="off" required />
                     <label for="account" class="label-account">
                         <span class="content-account">Account no of Recipient</span>
                     </label>
                 </li>
             </div>
-                <!-- <a href="./paymentDone.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
+            <!-- <a href="./paymentDone.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
                 <a href="./firstLoginPage.html"><div class="backButton">Back</div></a> -->
-                <!-- <a href="./firstLoginPage.html" class="back-button">
+            <!-- <a href="./firstLoginPage.html" class="back-button">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -43,18 +45,20 @@
                     <span></span>
                     <span></span>
                 </a> -->
-                <button onclick="displayBalance()" id= "balance" class="check-button">
-                    <p id = 'balance-text'>
-                        Check Balance
-                    </p> 
-                    <span id = 'span-balance'></span>
-                </button>
-                <p id = 'amount'></p>
-                <a href="./firstLoginPage.html" border-color="black" class="back"><span>Logout</span></a>
-                <a id = 'pay' href="./face.html" border-color="black" class="next"><span><img width="45vw" height="30vh" src="./../../Global/Images/camera.png" alt="img"></span></a>
+            <button onclick="displayBalance()" id="balance" class="check-button">
+                <p id='balance-text'>
+                    Check Balance
+                </p>
+                <span id='span-balance'></span>
+            </button>
+            <p id='amount'></p>
+            <a href="./firstLoginPage.html" border-color="black" class="back"><span>Logout</span></a>
+            <a id='pay' href="./face.html" border-color="black" class="next"><span><img width="45vw" height="30vh"
+                        src="./../../Global/Images/camera.png" alt="img"></span></a>
         </div>
         <div class="backgroundImgSecond"></div>
     </div>
-    
+
 </body>
+
 </html>
