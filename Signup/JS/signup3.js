@@ -11,7 +11,6 @@ const addThirdDetails = (ev) => {
         Password2: document.getElementById("password2").value,
         Pin: document.getElementById("pin").value,
     }
-    // document.getElementById('alert-pin').style.display = 'block'
     let allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Username == userThird.Username) {
@@ -22,7 +21,7 @@ const addThirdDetails = (ev) => {
         flag = false;
     };
     if(userThird.Pin.match(/[^0-9]/g)){
-        alert('pin should contains only digits');
+        document.getElementById('alert-pin').style.display = 'block'
         flag = true;
     }
     if(userThird.Password !== userThird.Password2) {
