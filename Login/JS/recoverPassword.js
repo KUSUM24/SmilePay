@@ -10,7 +10,7 @@ function recoverPassword(ev) {
     password = document.getElementById('password').value;
     password2 = document.getElementById('password2').value;
     if(password.length<8)
-    document.getElementById("alert-password").style.display="block";
+    document.getElementById("password-alert").style.display="block";
     else
         if(password == password2) {
             loggedInUser.Password = password;
