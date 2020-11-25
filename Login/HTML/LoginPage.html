@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second | Login</title>
+    <title id = 'title'></title>
     <link rel="stylesheet" href="./../CSS/LoginPage.css">
     <script src="./../JS/user.js"></script>
 </head>
 
-<body>
+<body onload="setTitle()">
     <div class="background">
         <div class="backgroundImgFirst"></div>
         <div class="floatBox">
@@ -30,21 +30,6 @@
                     </label>
                 </li>
             </div>
-            <!-- <a href="./paymentDone.html"><div class="nextButton"><img width="55vw" height="35vh" src="./../../Global/Images/camera.png" alt="img"></div></a>
-                <a href="./firstLoginPage.html"><div class="backButton">Back</div></a> -->
-            <!-- <a href="./firstLoginPage.html" class="back-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Logout
-                </a>
-                <a href="./face.html" class="next-button"><img width="55vw" height="35vh" src="./../Images/new camera.png" alt="img">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a> -->
             <button onclick="displayBalance()" id="balance" class="check-button">
                 <p id='balance-text'>
                     Check Balance
@@ -63,11 +48,8 @@
                 Insufficient Balance
                 <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
             </div>
-
         </div>
         <div class="backgroundImgSecond"></div>
     </div>
-
 </body>
-
 </html>

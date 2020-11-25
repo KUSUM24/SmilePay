@@ -64,7 +64,6 @@ button{
     left: 40vw;
     border:2px solid rgb(255, 0, 0);
     padding: 4px 20px;
-    /* background: linear-gradient(to left, rgb(0, 60, 255),rgb(0, 102, 255),rgb(0, 195, 255));     */
 }
 #snap:hover,
 #snap:focus {

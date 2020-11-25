@@ -394,21 +394,3 @@ a.next-button span:nth-child(4){
 	   transform: translateX(-10px);		
 	}
 }
-
-/* .alert-box.hide{
-	animation: hideAlert 1s ease forwards;
-}
-@keyframes hideAlert{
-	0%{
-		transform: translateX(-10px);		
-	}
-	40%{
-		transform: translateX(0%);	
-	}
-	80%{
-		transform: translateX(-15%);
-	}
-	100%{
-	   transform: translateX(100%);		
-	}
-} */

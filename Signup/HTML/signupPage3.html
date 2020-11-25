@@ -17,7 +17,7 @@
             <h2 class="signupHeading">User Details: </h2>
             <form action="">
                 <div class="signupForm">
-                    <input id='username' type="text" name="name" required />
+                    <input id='username' type="text" name="name" autocomplete="off" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Username</span>
                     </label>
@@ -35,7 +35,7 @@
                     </label>
                 </div>
                 <div class="passwordp">
-                    <input id='pin' type="password" pass="pass" pattern="[0-9]" autocomplete="off" required />
+                    <input id='pin' type="password" pass="pass" autocomplete="off" required />
                     <label for="pin" class="label-password">
                         <span class="content-password">PIN</span>
                     </label>
@@ -54,6 +54,10 @@
                 </div>
                 <div id="alert-password" class="alert-box show">
                     Password should be more than 8 Characters
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-pin" class="alert-box show">
+                    Pin Should contain only Digits-[0,9]
                     <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
                 </div>
             </form>
