@@ -14,10 +14,10 @@ function recoverPassword(ev) {
     else
         if(password == password2) {
             loggedInUser.Password = password;
-            alert('Your Password has been changed successfully');
+            document.getElementById("password-changed").style.display="block";
             updatePassword();
         } else {
-            alert('password didnt match')
+            document.getElementById("mismatch-password").style.display="block";
         }
 }
 var allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");

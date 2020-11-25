@@ -20,6 +20,6 @@ function getPin(ev) {
         }
     }
     if(i==allUserDetails.length) {
-        alert('Incorrect Details');
+        document.getElementById("incorrect-detail").style.display="block";
     }
 }
