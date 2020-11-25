@@ -39,3 +39,6 @@ function payment(ev) {
         }
     ///here account is to be checked
 }
+function setTitle() {
+    document.getElementById('title').innerHTML = 'SmilePay | ' + loggedInUser.Name;
+}
