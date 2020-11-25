@@ -10,11 +10,11 @@ function recoverPassword(ev) {
     password = document.getElementById('password').value;
     password2 = document.getElementById('password2').value;
     if(password.length<8)
-    document.getElementById("password-alert").style.display="block";
+        alert('password should be atleast 8 characters');
     else
         if(password == password2) {
             loggedInUser.Password = password;
-            document.getElementById("password-changed").style.display="block";
+            document.getElementById("password-changed").style.display="bloc"
             updatePassword();
         } else {
             document.getElementById("mismatch-password").style.display="block";
@@ -33,5 +33,5 @@ for(let i = 1; i < allUserDetails.length; i++) {
 allUserDetails = JSON.stringify(allUserDetails).replace("[","").replace("]","");
 localStorage.setItem('allUserDetails',allUserDetails);
 localStorage.setItem('backupAllUserDetails',allUserDetails);
-location.href = 'firstLoginPage.html'
+// location.href = 'firstLoginPage.html'
 }
