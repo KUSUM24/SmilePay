@@ -14,10 +14,9 @@
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
-.number input{
+.number input,.number2 input,.number3 input{
     width: 100%;
     height: 50%;
     padding-top: 6vh;
@@ -27,8 +26,7 @@
     font-size: 4vh;
     overflow: auto;
 }
-
-.number label{
+.number label,.number2 label,.number3 label{
     position: absolute;
     bottom: 0vh;
     left: 0%;
@@ -37,7 +35,7 @@
     pointer-events: none;
     border-bottom: 1px solid black;
 }
-.number label::after
+.number label::after,.number2 label::after,.number3 label::after
 {
     content: "";
     position: absolute;
@@ -80,7 +78,6 @@
   .dropdown {
     display: inline-block;
   }
-  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -91,7 +88,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
   .dropdown-content button {
     border-style: none;
     background-color: transparent;
@@ -100,17 +96,14 @@
     text-decoration: none;
     display: block;
   }
-  
   .dropdown-content button:hover {
       transform: scale(1.05);
       background-color: #f1f1f1;
       border-style: dashed;
     }
-  
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
   .dropdown:hover .dropbtn {
     background-color: #10c1d8;
     color: black;
@@ -125,44 +118,6 @@
     font-size: 3vh;
     overflow: hidden;
     
-}
-.number2 input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.number2 label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.number2 label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-number{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
 }
 .number2 input:focus + .label-number .content-number,
 .number2 input:valid + .label-number .content-number
@@ -183,46 +138,7 @@
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    overflow: hidden;
-    
-}
-.number3 input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.number3 label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.number3 label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-number{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+    overflow: hidden;  
 }
 .number3 input:focus + .label-number .content-number,
 .number3 input:valid + .label-number .content-number

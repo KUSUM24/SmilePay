@@ -16,7 +16,7 @@
     font-size: 3vh;
     overflow: hidden;
 }
-.signupForm input{
+.signupForm input,.password input,.passwordc input,.passwordp input{
     width: 100%;
     height: 50%;
     padding-top: 6vh;
@@ -26,7 +26,7 @@
     font-size: 4vh;
     overflow: auto;
 }
-.signupForm label{
+.signupForm label,.password label,.passwordc label,.passwordp label{
     position: absolute;
     bottom: 0vh;
     left: 0%;
@@ -35,7 +35,7 @@
     pointer-events: none;
     border-bottom: 1px solid black;
 }
-.signupForm label::after
+.signupForm label::after,.password label::after,.passwordc label::after,.passwordp label::after
 {
     content: "";
     position: absolute;
@@ -47,7 +47,7 @@
     transform: translateX(-100%);
     transition: transform 0.8s ease;
 }
-.content-name{
+.content-name,.content-password{
     position: absolute;
     bottom: 1vh;
     left: 0vw;
@@ -74,44 +74,6 @@
     overflow: hidden;
     
 }
-.password input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.password label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.password label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
-}
 .password input:focus + .label-password .content-password,
 .password input:valid + .label-password .content-password
 {
@@ -131,45 +93,6 @@
     left: 5vw;
     font-size: 3vh;
     overflow: hidden;
-    
-}
-.passwordc input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.passwordc label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.passwordc label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
 }
 .passwordc input:focus + .label-password .content-password,
 .passwordc input:valid + .label-password .content-password
@@ -191,44 +114,6 @@
     font-size: 3vh;
     overflow: hidden;
     
-}
-.passwordp input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.passwordp label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.passwordp label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
 }
 .passwordp input:focus + .label-password .content-password,
 .passwordp input:valid + .label-password .content-password
@@ -254,38 +139,6 @@
     font-weight: 600;
     font-size: 20px;
     background-color:rgb(0, 195, 255);
-}
-.next::before{
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background:rgb(0, 195, 255);
-    transition: .5s ease-in-out;
-    transform: scaleY(1);
-}
-.next:hover:before{
-    transform: scaleY(0);
-}
-.next::after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 6px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background:rgb(0, 195, 255) ;
-    transition: .5s ease-in-out;
-    transform: scaleX(1);
-}
-.next:hover:after{
-    transform: scaleX(0);
-}
-.next span{
-    position: relative;
-    z-index: 3;
 }
 .alert-box{
     position: relative;

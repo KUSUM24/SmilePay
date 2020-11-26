@@ -4,7 +4,6 @@
     width: 15vw;
     top: 30vh;
     left: 9vw;
-
 }
 .signupHeading {
     display: flex;
@@ -27,7 +26,6 @@
     text-transform: uppercase;
     box-shadow: 10px 20px 10px rgba(0,0,0,.5);
     background:rgb(20, 20, 20) ;
-    /* border:black; */
     align-items: center;
     overflow: hidden;
     z-index: 1;
@@ -39,8 +37,6 @@
     left: 2px;
     bottom: 2px;
     width: 50%;
-    /* background-color: rgb(75, 73, 73); */
-    /* z-index: -1; */
 }
 .home-button:active {
     position: absolute;
@@ -120,7 +116,6 @@ a.home-button span:nth-child(4){
         transform: translateY(-100%)
     }
 }
-
 .home{
     position: absolute;
     top: 70vh;

@@ -1,4 +1,5 @@
 @import url("./../../Global/CSS/global.css");
+@import url("./../../Signup/CSS/signupPage3.css");
 .signupHeading {
     display: flex;
     position: relative;
@@ -15,45 +16,6 @@
     left: 5vw;
     font-size: 3vh;
     overflow: hidden;
-    
-}
-.passwordp input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
-}
-
-.passwordp label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-}
-.passwordp label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-}
-.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
 }
 .passwordp input:focus + .label-password .content-password,
 .passwordp input:valid + .label-password .content-password
@@ -110,8 +72,7 @@
 }
 .submit span{
     position: relative;
-    z-index: 3;
-    
+    z-index: 3;  
 }
 .back{
     position: absolute;
@@ -127,7 +88,6 @@
     font-size: 20px;
     background-color: rgb(6, 142, 233);
 }
-
 p{
     position: relative;
     top: 15vh;
