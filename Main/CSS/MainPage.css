@@ -1,3 +1,4 @@
+/* @import url("./../../Global/CSS/global.css"); */
 *{
     margin: 0%;
     padding: 0%;
@@ -26,13 +27,11 @@
 .floatBox {
     position: relative;
     z-index: 1;
-    /* background: linear-gradient(to bottom right, #f077ea, #9146f5, #7ae3f5, #69d9f5, #9146f5, #f330e9); */
-    /* background: white; */
-    background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));top: 7vh;
+    background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));
+    top: 7vh;
     right: 11vw;
     height: 85vh;
     width: 70%;
-    /* background-size: auto auto; */
     border-radius: 5vh;
     box-shadow: 1vh 1vw 2vh  #203a4e;
 }
