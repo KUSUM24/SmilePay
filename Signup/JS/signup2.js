@@ -46,10 +46,10 @@ const addSecondDetails = (ev) => {
         flag = true;
     }
     if(id == 1) {
-        userSecond.Pan = "";
+        userSecond.Pan = " ";
     }
     if(id == 2) {
-        userSecond.Aadhar = "";
+        userSecond.Aadhar = " ";
     }
     if(id == 1 && userSecond.Aadhar.length == 12)
     flag=false;

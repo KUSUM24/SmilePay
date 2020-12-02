@@ -11,6 +11,9 @@ const addFirstDetails = (ev) => {
         Number: document.getElementById("number").value,
         Email: document.getElementById("email").value
     }
+    if(localStorage.getItem('allUserDetails') == "") {
+        localStorage.setItem('allUserDetails',"{}");
+    }
     let allUserDetails = JSON.parse("["+localStorage.getItem('allUserDetails')+"]");
     for(let i = 0; i < allUserDetails.length; i++) {
         if(allUserDetails[i].Number == userFirst.Number) {
